@@ -1,12 +1,16 @@
 {
   "name": "sandysart",
   "version": "1.0.0",
+  "engines": {
+    "node": "13.9.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
+    "install": "cd client && npm install",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js && node scripts/showSeed.js",
