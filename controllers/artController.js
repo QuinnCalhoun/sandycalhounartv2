@@ -1,6 +1,10 @@
 const db = require('../models')
 const nodemailer = require('nodemailer')
-const creds = require('../config')
+require('dotend'.config())
+const creds = {
+    USER: process.env.USER,
+    PASS: process.env.PASS
+}
 
 module.exports = {
     //finds all pieces in db
