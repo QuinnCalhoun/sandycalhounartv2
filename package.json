@@ -10,7 +10,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js && node scripts/showSeed.js",
-    "build": "npm run seed && cd client && npm install && npm run build "
+    "build": "npm run seed && cd client && npm run build "
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +24,9 @@
     "mongoose": "^5.9.22",
     "nodemailer": "^6.4.10",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "4.1.2",
+    "nodemon": "^1.18.7"
   }
 }

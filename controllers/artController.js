@@ -1,6 +1,6 @@
 const db = require('../models')
 const nodemailer = require('nodemailer')
-require('dotend'.config())
+require('dotenv').config()
 const creds = {
     USER: process.env.USER,
     PASS: process.env.PASS
