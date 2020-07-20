@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // <-- location of the react app were connecting to
+    origin: "http://sandycalhounart.herokuapp.com", // <-- location of the react app were connecting to
     credentials: true,
   })
 )
@@ -30,7 +30,8 @@ app.get("*", function (req, res) {
 });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sandycalhoundb");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sandycalhoundb",
+{ useNewUrlParser: true, useUnifiedTopology: true });
 
 // Start the API server
 app.listen(PORT, function() {
