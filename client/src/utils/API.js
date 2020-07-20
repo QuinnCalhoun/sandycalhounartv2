@@ -1,13 +1,13 @@
 import axios from 'axios'
-
+const baseUrl = 'https://sandycalhounart.herokuapp.com'
 export default {
     getArt: function () {
-        return axios.get("http://localhost:3001/api/art")
+        return axios.get(baseUrl + "/api/art")
     },
     getArtByTitle: (title) => {
-        return axios.get("http://localhost:3001/api/art/title/" + title)
+        return axios.get(baseUrl + "/api/art/title/" + title)
     },
     getShows: () => {
-        return axios.get('http://localhost:3001/api/shows')
+        return axios.get(baseUrl + "/api/shows")
     }
 }
