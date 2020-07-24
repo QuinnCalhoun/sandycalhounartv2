@@ -21,7 +21,8 @@ const Contact = () => {
         axios.post('https://sandycalhounart.herokuapp.com/api/contact', data)
             .then(res => {
                 console.log(res)
-                if (res.accepted) {
+                if (res.status === 200) {
+                    console.log('biggedy boi')
                     setSending('Message Sent')
                     setTimeout(() => {
                         resetForm()
