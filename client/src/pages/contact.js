@@ -58,7 +58,6 @@ return (
                         <TextArea onChange={(e, d) => setMessage(d.value)} value={message} class='field' placeholder='Message' style={{ height: '150px' }} />
                         <Form.Button content={send} onClick={emailer} type='Submit' />
                     </Form>
-                    <Button content='Reset form' onClick={() => resetForm()} />
                 </Segment>
             </Grid.Column>
             <Grid.Column width='10'>
