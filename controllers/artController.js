@@ -125,7 +125,7 @@ module.exports = {
           to: "quinn.tcalhoun@gmail.com", // list of receivers
           subject: `${req.body.subject}`, // Subject line
           text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
-        }).then(info => console.log(info))
+        }).then(info => res.json(info))
         console.log("Message sent: %s", info.messageId);
         
       }
