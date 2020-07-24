@@ -26,7 +26,7 @@ function App() {
           <Menu.Item as={Link} onClick={() => setVisible(false)} to='/about'>ABOUT</Menu.Item>
           <Menu.Item as={Link} onClick={() => setVisible(false)} to='/artworks'>ARTWORKS</Menu.Item>
           <Menu.Item as={Link} onClick={() => setVisible(false)} to='/upcoming'>UPCOMING</Menu.Item>
-          <Menu.Item as={Link} onClick={() => setVisible(false)} to='contact'>CONTACT</Menu.Item>
+          <Menu.Item as={Link} onClick={() => setVisible(false)} to='/contact'>CONTACT</Menu.Item>
         </Sidebar>
         <Sidebar.Pusher>
           <Grid stackable className="App" style={{width: '99%', margin: 'auto'}}>

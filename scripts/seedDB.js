@@ -8,7 +8,7 @@ mongoose.connect(
 
 const artSeed = [
   {
-    imageUrl: 'https://lh3.googleusercontent.com/D71hvgECr4MwJ1BcYvEthlaZf9s7ZlD_sPo8yH08benzK0lk3gzWP1NsPXRtUe9PK05RbtYmdi1xisWaJsx5DYYm6CzD3bjgPISSxxKuzcnb2YKdVE0usXYNMzqgnvgkn1Z_jbXCu0Bdg-zqGmNyjY_FHu86zp0qI2cC3wx1aTt4Oh0E19v1Mr3gN85LuZ1wByXUCgDKAgl2a0xAXQ6iR60yGt7BBAakNisRSpQw0iAV599_B0bsqHRwpLv1vbDziVDhDLhZmcsgk6tbtm5JLLFJWQBS0LKiwUQhyteNrXMtwLTOENBLTTf7myWsRJx-yha_JiEOGAUkJzj_2GcFnq26l5eQRfQBauJex_EYCFXaUDt1LZQwmPfhb8HOqMSJ-B2iYAafVDIQ8yQCB0mVyU2ISEWdrvrzqA2Rtf7gX-Hs8HD9jUhwDFuIwbi7XRlY0F90G3FqEwlvzgtnj6itvhPCTLVuN2DH9LXxlHM0U6ciRjfJ10zDQbVNcVv0GIYZIqzk8WBOEdnFLV0eNJvc6tWXIlVW9QSwa06p3pU87MQrvwCHbN0cTvy21640w9Z8BfmEECviN1tltqopfrJXswNRa4Un0BBOjMVOGEdBCStaNMkMgAR8NXRhNF6FrFsv_dxID7qrUypoeasyinHa5B05kiVLbVBrSMosGhqqikAHo99gGs5sss1Gzdhhzw=w719-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/3rWSRvV/Word-Keeper.jpg',
     title: 'It must be Monday',
     author: 'Sandy Calhoun',
     year: 2017,

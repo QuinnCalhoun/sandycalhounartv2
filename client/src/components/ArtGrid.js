@@ -26,7 +26,6 @@ const ArtGrid = () => {
             setCurrentPage(1)
             setArt(result.data)
             mobilePaginator(result.data)
-            console.log(art, pages)
         }
         artGrabber()
     }, [])
