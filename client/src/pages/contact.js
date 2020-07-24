@@ -18,7 +18,7 @@ const Contact = () => {
             subject: subject,
             message: message
         }
-        axios.post('http://localhost:3001/api/contact', data)
+        axios.post('https://sandycalhounart.herokuapp.com/api/contact', data)
             .then(res => {
                 if (res.data.status === 'success') {
                     setSending('Message Sent')
