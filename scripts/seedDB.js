@@ -30,7 +30,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/cPWwVPK_hivkWCdWGfCEEm21hf0G8w3CQzrKMzCNVITlZLvt5DkTKuVOOFjBe_q4Bp22-b-NnWC_KN07zC95PQQRYZXVNuDuBQiqFDMffFhlVa8l2hro-YHqywwoRNeGh7Rpb2ms7aldW79tn10c2MLxWQ6w4pIJhiXgdgBuVJQuHsjh1V-qjl4T54_87An5G7OK5BlMrRaWuRUKlzy3l03AVUIV1tEEIiRvM3wDjeQi_lbKE3WwzRB1n5mZK1o1qu6LE7yvc-YTKL60rK-KZSixkdczsnUV-BSBMQmV3tyBmWkLO-Zoluqh780gRq4L8kHNOZPap_V2rl0TbemIEndwHx3wz7jmmxAJjK4qI_0PQcctH6f5dmku1PYpEFul6Ew7hOsMKt2tfqVKiSZW0SL8vPKTaNY7e2Ftz6woZfQDOO9cgno8C1yeTXpLylwkLJ-Epo2CwCUh82qX05o5ut1yLpYMkiFqsO0zGSkMlbYEwTQDn61NJ0s8yzqHIl3OooQyS6hmx4b_1zr79rp7274RyUsP8jtVXskeSO8TJ8FwaLuLeYvXN8SGPxrVPjcUSFB3lnS8CrYGuN30LQ3eFVXeHyI6MeGSAzfw6cm5zknpVgDlcYrITTnrpDvWzhxVSQhQ1ps0Ul8Eyc-uVkueFWuLUdXyKczFJ25s6dfJXhFm-2a33fcC7PLBDFFSog=w693-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/K7Lp278/The-truth-was-beginning-to-sink-in.jpg',
     title: 'Reality was beginning to sink in',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -40,7 +40,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/QbNOBwofgc35HOJty_NWexTu2o3yf0b5-xJbVtuers52Gbwjr_t6GK7-VyLBq5fqOHya-fwcJhcGzKqrjDUEmlJshfecMLAKtjRAUyI9Etmyc1No58Mg2qZ_otmWyM3uzT60VMcDL0nojmXUyfsgr5qXkJMRbFKjRS3gADN06EipoWdSnoBYmDtlQJJkTYmpJMyJmsY9l6j1wWoJOScipdv3VDNPJG3p4gIPhRH9fl-0G1zCwSiYyXZ6ovV03pY939svvAI7HCW4wlVm3RA9IX8CB76ZdHPr2FbxcgX__KUBb6joW3ZAxq1KNwEoBPO5BobyP0Yj5oRmXry9DKCCgaweEzqJrx0wdEzBeWnrzxb1ttsjaEKacaLTNJvQRX2FG82P9ydN4GgbSt_mLkHxhu_KpwbVoWBjJ-_uN9_3HQwJd5-iTqUoRM2NEikz-3a3b0gXfG3DjjPcsZqq5hbmkOI2Fl0bQErz_aCjOve2DNCaIOHpw6f0b7AMo4-GEH7eoooCJE_2k2P9HO8GRnpfy_fp6bPxI1UyQXTlpZsz9V1NyUZOECGBhMPKZO3H1Bewr99ArwkaR0yRkafOKzY5ajStRfVBdZiyBhRq3h-KbaGpD33QtUKGLUqHKAEl9uIIPtIiHQ9WrQQqM1auHB_VSHeU7l50I0mFM_4wVDXX0JmiXpu8n7SaS_ZTiEE9Cw=w687-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/N3LtJ0K/Too-Big-For-Britches.jpg',
     title: 'Oh, yeah',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -51,7 +51,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/USISSxbYQz0wQ0OyKLuACWD6jmNFFv54oAcBUUFn8mKjkHG_i2-6vYhVeyEu0eh4XCXyqZcXEi8h_OLBZug-zY-LQIJGhxbMHeckjh5KwG0kV83U-sqt2BnE1PABTeMz-nSt-Pm5JOx5nqGP8nrUL1l6Z-nSXyq9uui2-NBY44eL8kFzLABi_HIMuHMiPdSUYPxGWEISMrBb4N1ujPPkGY9NArk9jBYvuhfBjRTxLK3E9zlfgP5h85oN1mmQJGo0PQ7XfvQ53jSLlg6lW72l7oogFxSycLBE-GZdpOIhrqX2L6_GYs2FeTrZLqYT4RUEr5f7VX-WXEERNYrbGRs8xq0OkLT5D7o3xJnl9vxeSjM0xO22gZckK8YTHJeCx1JPikivFSPk3V-fkTpf7O88YvJ5rPXXLyhOniXeXgcM_KWxxNg5AKoEjWL3LB2y9bkRQkiFvS8tD1JPnCklNFFAzbLO88Bq5zMV9GSjzr_zBsAPOQguKTmRQ8RqbGqshBGDOqiVP3KtqB83TPRnMzTEDZO5ISai0EYsnBk1FPrWNJBWXhaA4osOzG2YCZwoqRWN3rmjKvJl0FxMBDkaG1QY-mXBW2exVtNOuOoSJmFvr2qAWF0x94Ji_RQPqsfgUoyc52-X41C4lMifH-6k7F3tb0jXalTNZdNLkp_TwDoO_DjYaB6Oq3QYvtPBEApZ5w=w641-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/mh2GJqK/innerchild.jpg',
     title: 'His inner child was becoming a burden',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -62,7 +62,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/CPDW7SwfmdhSCxIXR5tR_ty-Li4CHFfXKVEesHFq-mCLt3VI0DFcJYUo-DRmfnGERQ62SuPM-phSSh4kllSMtfyF2cOIRzy5cA7N74lp3zCmXwzOz-K2TpHUxg86F7NiIK4JFcbETmgsnUS8t0nwiVf51ltOx0rQUsWmo1T7jLQEkqn2Me8L-ogT5FSRenGCAMek38V79MyfSkd91XgyzuaJMn95lwIWDfBO7fvpcxsT6Y1MGUDqzv8AvQ7jvtuSmMxmG8XxKqj-2la1yy4ERyoKXPMdH4qPeiX8G5j9IPYfvO2MjjkX8FNuQu0-eUF90z2YuIkuBQB-Zu94zX3OXP2xcdXU-BXVj5bNA5UHWvVSm5PgLpcAeS38xibMczHPcUtPeaXkynRME8P1mY_4cCGjTGCekDJQMnh4O_lMY7i-CfNna4Nr9ZduYAXG6_38L2VNeoISqWnih7HVqFplsM8WCSCLn1q-j5jmbvj-Rboqdba5lIog-zeFPfhkXLSWHOlEdPLMhyJ2WI2qf09jsu-gdOkqcVgUs2-Mk8oxJ6oDpGLN8vqZlM5TY3WgORM3yIBbBCUi6qJ3jbuB-sf6wdO4uPwX1ImlSDRzybzSSmbPR-oLIqHIGYrtzUb9on5JnW1sigssLyngzPZFNS-xY_EaJAHpRRRjAUFJpYa7eK9oAlh5byhh8Yv2BE3vgA=w727-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/K9gHvwP/OpenWide.jpg',
     title: 'Uncle Chester likes his cherries',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -72,7 +72,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/NlB8IRJsi3d83nv4A01KHAM2tRjwVAPWMLQPxS-6eQpFX1005V7V4K-hy305_FY-Dep-DJLfCU7Oh8g1DJJjr6pq6oRbQqO1aTMWH7PlpWeh3n6l93gQvWT8U1BiersumEX2GhrSLUwhwjSYmIAJUV0ADe2UFiKwXBIRivdx5-8ZGylOeltpzbB_zLZzqeHZ7Q9tTFNnklGKGJVbZPoel_6Lcjpquauytr9f8VCQqvoJrbPXd2Pfth582O3SVRAQgFn8EFSMAm2t67FjEshQD_m_bMF-bVgZwuyyyrTzaKYu3lBjfHYBqOx4Nk1wsIxH7pLVrOdC-qkUx5_WwnhPxH-oV3Y4dF5oIQVKeVF0eiTlNDo5jk_HJnEEmWz5x74cx_asO4AGKNbnl4fbdDCuhzQQgA-57QaySuhKJUKcNQ7uNf4f3kw4oe2CYoI8xZUsYrDKdZaDf7vgmLjDPXGpqtf7ZHmrE_pcbGmn6zIuQ2m2O6UznHYYZe4z4zGUBzLUMJyfgKGE2dArC-HRrlvJTpN8lPNW0hJXH8TZHu-pwXnYyFuYmfIPVo4xsvbBG6PjhRZiJodBkmIl-TWnjK8X06gtpt1MZ6zEq3XzibwW5sRheIrakW_NPXRhgrZu6i-s3PN4tNgRq7xG9jPDLxXDNNrossn3SX2RiyCgapx1DASF1fPoVsB6JiHxGnMhxQ=w384-h512-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/kV7fkWG/beveryquiet.jpg',
     title: 'Be verwy, verwy, quiet...',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -82,7 +82,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/nyi16Czp8JoNEkftFeHFv94Bv_7ZP-oDTrRn-7gjYciEn_mzjHW4wI7f2GHKic6NJcBcAt5ObxzIZ6IyOoAiiGDplM3b-jul0W78nMzm_rCFaw8oOU16FZuOSatWbk8nRBeZ7HDMJ8G1s_jgJrVXDt471w3h_cI1Bw0UcXNWNoakDAfkvFt_TRSbwzWR7Dy3mLY0OP3SptmaesXPrgsDBLW0zzCz9BTpdW_gWvvDqtL--4rxCfjYJi3x8WnBjSL1nVQKFFhdkzQGT82u2t7FYWTSHTBdrHPr3LK4BXHlfcU3BWlh9xRjgzV_CPoC66kYgx7tzwHsmItEKEhxkQDL_HAJCqwsQvq_aqXKwEkr9y0CjE9TFYACeYdGrbfHz9Fjrc_6SqfCY-xjG6J9PB4rQSHNPxWS6Wt8-Q41I1FV2Ac690PY-X6mIeX3avGCvSCTOn4p__QtCT5pH9ocpOpNGhRLAP7sby3OcuNpXOUE9Pb4BJDn0-ifV9829rgLU7jQlo1D2axd4LI9CLvE8zK5oY-TOl5rrxRRs1mcSqxdlX3omMcyfONAREjlIPZeBZwcGEgjMHY7p8qWR0ZQvlA8dz5w-QudwLfdmkfBIQfcz-fE7iwp2hs751duumD61oCbn8M0vSc0ENznSt9kqXIOrdHA3-J6bHXfIEo64vCBqRMcXeiidBJHAcBB2unnuA=w384-h512-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/YNqWVcP/Needy-Inner-Child.jpg',
     title: 'I have a needy inner child',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -92,7 +92,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/PzCJTBgErSui90uW5nZ26XXp21OCWSeRkhQ_yKfIFX8iUFRSa4k62BwW9PBYfRHoyp9YEgiCJiHsa5a8e2HYUm6ma3obNv6yxavn7OZif11Y7W1dteCV_XfODDWL83L_VRA77QTV9D52qrrUrWMuwt5u5rOEDbANzZiRneM8lY2zx7p5kDpKgTatAvBdik0XJymmFCHEvDlWGOcHqkNLIodokC5j6IS0jcAVB51go4plVvcHC0J7s2SQngqaDx81vesJrvRjYbTpVFvC7KqXew3hdJygEgx3MVmdUgEbhXqzINtcF-5LZkZnE22Np7UhbABUEzsoNuQXlqqUeDuB91D4LvHmAKA2SmUMMiwbuwVLCTKYa_Q8fbPvhFLgiS4XfI_fKv97F9MHZGtwGsfJ217sS3zHFKKXyFcHwn5vECPGzDNC5te-xgjyE12qKdJnNNnFiLAM5r6VjVHJyx0tgTAH_8wAZtWPwTf-xjuY1GyeHw9d5vfAjwQTaKE43q8PHo8ewLHrAOyk1KRvAQGCJIGi3Dp8pglenvrnseX0meEP3QU7Sl5pr9jrWO581F5IS4ZMTWKW3RrH1CnGN5wWMIEtLhTnTRje6-zt-pCDNeWHt-lZ-TYdEw5si0nAObJbqAgy55nA7IjoVYxgwYmm4e-OkkrgX0hZQEBwlxWb4N2LDLY4BaeL8rdcq25YBg=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/tP27f2y/Princess-test-fail-1.jpg',
     title: 'Searching for her inner princess',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -103,7 +103,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/aEarLI4Qi1WnwsqSHFyJbnhS8_AVk4a5ABj1Yi0fEgbr6W1FnUAwDjIcvBqvfgvYH5uI1D861sTSQhorVRhbBSjKcG9R4aC5Lhq_It9v9JsURUDSf69B0imJMK1TBbCHZ53suy7oaZp5Z1ShNkS922HFHEzNFiRxOe2mh78niwEoE9SG8kInOWa3DYUgYWFUYOXASaGfPxbdYRnajKeMoGKPZmIxTEhlLf-ndSoC8LdG1CPQooaBPc4NEVrj9-G9xrDPYGBWUnWX8Riqp3vXhcFub-r7iXsKdhat5cSH3IuS6IhZzbCBVHAHMa0jtEolDgj-JSXLHZO5tViigYNx4LRlyzvA6XfGEnMwckohzqD4cGRnHtZvoRJhtr2KMq0uluKUHAoyzm08AEHQJSk3HE7jpn8yGdwq8XzOXaPnj6G2PMUs0eLBI4u-v71qAiI60PvU-gtotWchPlJlZLiCFCypQaQh_Vx5jfsX_BQfEbmK8c_dREvKXdf3JMpMsM0ZijmVI1qUnfHJupmvVycrDdrp-a7CIdJoqZQ1iE6EXvglcVwBGur5WbfegeFPAjCQbdg_9_iEk_dPXDe7piPY8lOcsdneJwm1acd8tuA0HWejjLDOKG4c_z8JjtiaYckH_JiUSmnvQ8RKI5KhBd63l0GewqKwrps9DR0YKZSFCJJVwZEmXp9rodF_sccrVg=w1349-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/2hLhX5D/Getawaywithbaggage.jpg',
     title: 'Getaway, with baggage',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -114,7 +114,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/tewZe87lyCAgooiN8uVL7JVaTFK3e13Jum3YWbFDqU33Rr1EE56jTLaGa2cD_coObkXWKjml2jBgVTtVVUSMGaZ_ojLQL0wWHaGtpLOIlfgmNRBV1vGXfvlXlL5FUfMAhSlKuxJon-RmVmLVFiCrmmsOTMhQt_1kRvbnYDwPo4Esz2aUNGAhIu7rgX3LA-tWjJKEe_SR_wH7U7gjN5pX7GvRNP7RY-pb4VOTTTcWqtS_7hQKO6RkH35yUNW1lnLbGq6ysZYAgSlUH2aHIFjatlptzgi7zMVHtbWsCi3dfQXr9dHuSdr55uY9OBNtT1zhp-V6Pm5kpc2ECHW2YcFKQuxJVJoPhYKpQ1Ws4g_RIrZlWkr8S6e4etkdacUaXb-ORMQ7dXVyLanRwYwhpn3-lDdQnKqWfGIsjy2hi_QTI9HLGrTo-0QrQ5tSQQWFECjKfOYlaO9yxGUr9UO4Bltn0LbsIZgP_OnPYrvfDrIBPNkEdvAqzadrhhedo4ZkSlZj1kOp3OWaPSd6K2Ofu6T5y48Hslgl_8CSWXpyD9lN2BSfWr9PO_tNP85CKQhulXK9fPmW_sc9oMREYEHS9tjhTeWxB1_PASZpFBs_UvhXSEEuE842NRMO8WNuWyaZcm4qoOf7ijjGsU0qILXdFjDdp_VPydNPWAlMnpPrnO8yIQn0sTcJ96fAmLLZj9486w=w960-h720-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/R2PJmn3/Day-She-Could-Not-Fly.jpg',
     title: 'The day she learned she couldn\'t fly',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -124,7 +124,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/8z2zT8I7B3yz2-Bbdxf68awwLmzeqFprhyRy_IOrgkrjJ-IgpaAolJZEAxCVqyDFinNCY5ezvlU48-wcaj5RqTfZHlekKI0f6MxST5yWbOCL18a7xXBDFu0DmlGLdqvYFdwbXrhsLe5XVBDze-qg7PvnWMIsJANICMHTMv7ps1N5rXeMiMGyLmJ5FJtPwZbjiFxWePwYF6NN1xVRkMLQi_YVJKNmcR-t3wjUhlXm93IQH-agG4JZ3B0qCdRRSjLwTaFxnue-6JQwf57uMu9RarTERxtWV7h56O8g3XJLkGbiiwrXdt6XRePiPzV_lGiIrWpSKcxXmxn-mqtldROEyUx2dMUCO5CMQD7cli_5Aii_udOSNXXv9L45HEF8cPsoSGalM1pztbqCJ-IW8R6WPzAorKGLkCGErFuO2O_lXyC3oC7ve3LM6puiFL-QfuTS1UFdlP9BRFU5WeLqrW5VrAgF2gHlcPiqBMuVF2yPwX2DyLwu8SSyrR9-PYJPSumUzclPPTQRVjFKUcOFhHLYq5nESHHYAgdBrtOWEmZEyaLDbcFgLoY4sQCi6dS--U0G5O43ibt6oJy_GV1z_O41mfUzn6p2d1w1kUtCfQSs5jYOxIc6AGiD4SQY4kyfNl32Su9Ppxaf6hMPjru23DARHw3PzQXdNgeVj2RTp_4SXbZFaKqbwQ4-_kNsaR_fYw=w947-h970-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/LS01ty1/Didntlikewherethiswasheaded.jpg',
     title: 'He didn\'t like where this was going',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -134,7 +134,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/u3I07uj2LOw2bW0RiemojuTGlPrcxSw5X8lChp-Wnhc5NYJWHOblGwVRPBojYETD6bgQAdNjHNJ4_pD6_lKk5DTLl4I9kVRCHZmVQ9hmH0O1IBhVbmOEIELZLKHv8qbvKU2UUDLEE39Snm8EVUzVYFhQ9gj61rdfh0CAXcqJNHdqI_jDs2Usbj-A-ZtnFNzWDEzuH7r_gFqffNROY1HpUsa6lGvdTU32gBegEPJ7HTDmB0HUn9Qp_t5lxQeo3f3i3iX-BVR58-sNacCNrBW_jqMl-0c_GFfz7GK-oMPepMTIY2K255OlJCrrLSnpJM5E4_gZu4zhDJLvxVdGJjMVEt387Gqui7BoNZy4eigoDzHnspGj9qfy69D7wkAbSKXaf_N-lCNpewucjdPWk2-mmaPY-zHjS-Cres9ZeljcKHTF96DiRcnA07uxG81VkSucOybW2zc8K6UTw0vEG0UxAhhKdwDLxeapjXL6F_XJZzjBZ8ETg4zKxgMr1rgknznGynDk14lqZ2iUQjXGMb1UfouZ6om7FQORzVB1VCbi2DGJK4RuFc0tefCJN_Js0tkb5ShBqUt2eoPIfe_lnuCTuLYX4e7a0ZxfT0DoG-6ZUFaMgVbTgF8fYAD3rOTNGQjM18ChWPEbKjgzxqvZJiuTyfNGxhHTKd_jsnS5tA9SfqRpdEyf1kMgd48s-LFZ3w=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/swsgMRj/More-Dangerous.jpg',
     title: 'More dangerous than she appears',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -145,7 +145,7 @@ const artSeed = [
     price: 750
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/46fGfYcRuVW8sbpa3Ex_P250SS2O0B2dnyo0p8MHLXwfF0jmF-XSNmgfLdJvoO9wQKp2rt1kE7ONJPlUrjV6e-fTky-5DMXpHkm2yiKeg8-OLjnAeGKzVIqjmmN6tEJjBrdZ7vrkOGCNfdPMMzAjxUdYI0CfLEP6ITf-vaiyQFIgofzdP7TJunXU4veekuWqYDDQJjsd3NStUv4C8xvg4xbj4k6d76dUybgoVkDmILaoCgPylErJP-eIK4bZg-2MsSoGVeulerFAGSAab8TThY2P-YhH_m4WdEIHy3ftFopik9xw75ZJaLQGuNjr03DY5fbzNMQ5tvd1Srk0ESpcU5u_OVQd17bs2Ya2d19LXdZEqiEhjotfHW-y7xtwtjlWWQTPG_2jBK361hKuQv3jsBBUdTiIrFiWsLAtDiY1nTs7WJuE8_B7FZ6FCQp7MS-iUc76oQCLAYi4buWd2a7xAoepS3c0YyJidF9tpY6GSRLt9C-dImK1Sc4sTZI0l6p2CXovVr6irQUT8ZMGOmLDsECwytWfFLa6qg7DqwU3w_Qyij1LWqFxrVGk3PuQrgnskd2Sf9MMaTdYZ90H1klBNJnf8p6rYn6Epoji07n5qFCYFJGMGx25-z5tzWkhrB2X79nbKX0Vp01DPxFP7QmjIrOnMcXhoAB_fNlAQQzyem1fMEWcThfqY1fjzNNXyQ=w1259-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/gPFS23j/Naturalpeoplepleaser.jpg',
     title: 'Natural born people-pleaser',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -156,7 +156,7 @@ const artSeed = [
     price: 800
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/uD82x5BCkP75JNpoDORw7YASo3utjCkyolJMRY3qS-h6MBVUdRNtLjOw5YRKYnIGDA8kup6Uvip5USXxu6igFHT89pVETn4Eoakk14yKbVGd4svYCpPEB56vUqI0Bl0wDOTvTUEkYJQTIuw_LWRi_Bmxg6P8sROIsv3f1d2apqqt03_vyFZnPPK29N7r16xJd3fz2JGzPdr51-ku3Cyr8RLuRiS_qGfRqPc3nQWkpzseuIZrCf5Z4gW9CBAlyAxFOFE7Tr-iZ7qXeIeQRLK-lntt7b2c3eiUq_XkJysuJjhmUPu7Xd2xO2Ad5I2YdQcVdZ0ou_eKUwlNyxIeMrqXlvGOjqD3-eNbO8t92fuFnMM_vdPiYyT4sTwjDs_KZ0go0t35Yz4B6OIkWM0ML-D5tGyS1v_hbme5DDu2TOYNuZr0qu6k-HWFImdbmERkghFzDa0rk5yttEpEg6Zo92eYPIEbux_a-ikaGzjph_wkNgdLWlwYlj4ZAJ2kBIR77QLWNDG38hW1HL_wXKo-Hvh166-WUpa_Lrq-tG-fGlbL7eXGepM1DOMJJAoC9HRXRTNTd1lWm17_aw4QX6ELHu6YemvTwpTJFn4J4sMHaBVRPQZdM_tWFNpE0fwO1R9XLuieptfs7ynytoKoD12eZxMNjCeDblNv6OieX8AlutL3P07GxKeVyjp0jOhuiivJ_w=w899-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/TR2fZ10/Waiting-For-Sign.jpg',
     title: 'Waiting for a sign',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -167,7 +167,7 @@ const artSeed = [
     price: 740
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/kOI-cnvURdAeP5nYxHA0JHDOaUrXbdlZhF0es-opJ9OPDrncePJpdoKj7KqInVnq08Kh9kQHk6itGvlN9tYQSZzIfpwcdTvFwEZyxXnZGoqLWIk1F_6YqQbLR74kLLQlhbsiAsuQOKUIKU0R-xIdlw65458AIL87ZJzF6YD3G4fiqQid_tarxnGXsxQVTTNEJCB_a0Vl1voJP85I4y9G8GwUyubGIJxX70spqgOvnXxqmOXNI2KcmxO6j0RbL_gSDiHpA9gumET4rxzB8_kEmSTe9NRcESCKXf6loYOqLKds7OQLq6_cvI0FGlTAOZefTMhNOuLbHKbC7I_syt8AHWWqkX_3W6l568Au-iKHMwFs7d41dcWlKmJR1vGiJWyAVeyT0-cvSdsRbYcf2wLZg70h7kFuPkZq-672TOf_lyiYx_FvhFACMceAiWlnpsJvYSjgXtEl81j7AgHvP0iUo5KasC2NPlAu19uwStAMyVX9kBjYf4sl4S4FmXZIfr6XehEQGlEi6exwC4VHw-fKtm57eVsP4k7jk_0IYW9wqW4-TKI5jRmxTJvaDntmo9CWqBFpeg-dYisTbButjuuTLb1fCPMgCz1TgXRhDnqySj7l6cFANXsWtHAimzPGkgdC6pKnV9kcQvuuwto6eSnGLlVAlBhAbyaKwNLhqR7ujAQ5YfbqCFFM80lxux5e-g=w734-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/njvrj6D/Crybaby.jpg',
     title: 'Crybaby',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -177,7 +177,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/qg0aRzb8RBRy_-anDPbsOCyZLBLQOuRR8WtAi6LNGqC3k-KEEecW0_am9W4Ntus_H21Gi04fRzqCcvCWeAXS_04P-sTNF6Hsk7QpBmKMBbb5I43eR2fm4hs__yp9kPn4X2ZOrJaet6gdrI_GVyN3LHXe95S6HfuxDwOEXvQDlI3yZeiMHVZ4NCeoOzkQ45e2XN_NmDTPS7A4BpBnrFBv25pVziB5CZYtu8zllPUIqSRyXUdyy35kVLJP1c2JS4dNp9hGFGZcHSlznuIJxdzqtXmotTustbI8gDzEEJYLNv_yW2RUJNdCnekXLQM0ZGBhLqU3XgsMBcbsInCoq9pHJqgW_Ge2bKh2zwe8GWTqxNw8IEJQvI4Pp8qbscJRDT3QF5O8dMh9QOI40RvWvSJ5asovszRE1Bbug8nwguw2Ko0Qf_TYmaFQuQhxjOke0PvgRQ1pbZ-vua2vEID3mcc6Ta1hFyIdMXMW8LgfbibihFIb0qzLUmT2hxVwMHFTys-__AL1xLxq8IVTkEx7n_Gsm-VPMIkTTaKq7LQIjidl1SlGW5fsprwV7NUJ2ilgtifO1_obRfsU2f-84KINE4srp_YIiJ3JJCebqB0G0i_5H5mpjkEC7jqK_fckTrvYZoeJA9Y286EI_LZ3wOt3KescQvbCOLOP43QDUtAr8hggPlDhvhoWwN915LQB20vPKA=w626-h970-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/tzrJsyn/She-Was-BEginning.jpg',
     title: 'She was beginning to wonder...',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -187,7 +187,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/t--NA3C78WmWdIYl4gF2KX3Z7hQQ3T-v2qv66HcH4oi8ZYahIrQuAFgQwhDfNfuzCiAvXnLdR4uRlJekEr6xaaIHsp1Cu0XrG6GOq2a217WsC5d4uBqsRO-SK_zvFQTjbP39ffEV45j9Pm2lIorh3pFh4aij0l8l3wzspz28qh8uj19nHdJb4oDvkb1bJ4XPoqHH_6IxvNi4fS7m2mvE_NBTp8S8nguBvQHGbhFG7YG0Hc74DhJsv83Odw_kYGXn4hYBfB0gNKgQWjp64tuRlF_Fh2Ea42CP-63RizsORF58FdKUh0xXwOsq1Su7FdBRPOEMd2FvBBcfvpyi1LcaR3rHwT0LdgEaILqvK5gw2d4-W2gvXMhFX4IFyo0-dDxeZSFGQhxPFyerh5GhcrR18tyWdkGiAQAmiG1N7PAJ9yh4FfKaSdgeYFZ09jw3EQDdImgGED9jcVmIcZUym3d1x0dujAW1BoUZdp9OiQbXUGjGhN3iPgFnmCA36owx-NzypCwqjNG_Z4-gbSlw6UlBNAEfWk9xA-dh4laOFSsMj2d2L2Td3519YFB0Q6QqR6Zz6eiDuoNRqpfb5tGJH0QDpNyBzpRSteKj9Jeq_D5jL5LZlU2X5XjPyRFBRLxbdnBTlk2miDI3SAtb1puQMU-xSZkgTjmclMq6WYXRec2XzgT_66xgxz8SHkC01trCYA=w815-h800-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/0tzSfsx/Unresolved-Issues.jpg',
     title: 'She was beginning to think he had unresolved issues',
     author: 'Sandy Calhoun',
     year: 2014,
@@ -197,7 +197,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/tJ_RUYwhd5fgvgv7pOgTpXV_Zay9sAZ4IwvCGKERBbejNfnRVjIIS0s6bIZp61AkqKouVLtIOAe8Gt8iTXbkUo5wQQbHhH4LozKfPe1zxm-eBArbTrT8aYyq0BtaWjGxvpLrTNWeGLb_nxgxAnRB0___g26B_hI_-2GIZsGvTUisf2FtOs5ktc_yA915HmxSBVlgYzIfz56Fa92JXQ2Z6euw-ykjE4u_Ed3SXXqq-L-8MX_04lcC1a0U-vxEC8bUb7NOkOoQ47y5Zixh5TqR1aNFpKq_EG61WrDECOiXWyAOdFhNVKKs7EF1f0WD-z4sPoGivG4xf9OQj3OrJFVy_XtLmyJCJYK6U-13-nMizwYFDU7A0REr9ZzIHBLIVFyjXCapdrpb4rWuoGSowz44McL2-bw7jr7b7zzUNBDycpUNYVoLIDWXeEJgIsDoqFBg0dUf1VTXjG5JFunLEMaXQkI9Z2HvygTTWnvmMK7b0QjgQoXh_sQbB4LLXBp9gQfBNfpItNx909ah405QY-kufjs_RwkeA8Cn_1cOxBbnTBCSJIB0p18l1KTmk3DOp7jnozLIFgXvbUw5H9QRnmNmAjSFj7ulrdq4EDwegrAEZO2o8m1mB9sCahSj3-SehR37mrGPkABYIVi4PafG5zfvf5yekortwlolBlrhfGyVfHUZBOfvGcXFxVd9cdfqzQ=w918-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/6ZMR3H0/holdingon.jpg',
     title: 'They said it would be easy',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -207,7 +207,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/OmmurhPACrv_bYg9Rs2737wDkoBcZ2lqNyCrizzSKpyBRzi1OiMxUWR-d2cDOOTldYXWLEfGnXdutYEGT1khR0i4C3_CLDI5lCwq7MMpaYa9KM9PHyQYMYBqPJyEkvb5f0hQLky8Xzav_1qWNuRwI9qnztmyEaCHvwr5UqX-DBMDmiKLJRgAPWmo0kRRzVJSE3TNwD4eYa-zVy1N8k4ozjWPAuEYuvPjnW8-5fIz0xKnz7Rp57yqXUTDY8nby_oKClDOR3oM_qKjylp_WZuh_7QhTwA-iqMQZoYwO61z2lMPaup7eCM61D51_V3gwUQjNWdNoSE1Ewb_eB9IpWyPxeAeTfpRqUsERvIpiQVuLheyidehwWxCZ_XRc3SY3-3Jb1zV6UijY_9nho2jeMEdTDzL1JwDLvUTyW3-JXnwDWCiO82MgfF7mMJvwQAfTdj7ROWfbnnC3NWwAjwQr3XBlJBMhp5GVaZ8awFLV9ksA4bHXs3aO7ojuteTddTq0xA7-Ja537eZiYl4j508GBjGDQcv-1InteiWmsWV6uSKc5CN_g6zEVbQZ79y0XRNtgdXYZxBr9NR3xzt5w647eU42-dW2GOqEv1tLMAsx5ov0fWx4Zjz2Q3Ru7d_gcuwWU2ZzMwdOApdXGQHB05xSQLEI6FJl4I5zzc4SJPaENO71Kz5Oj13yFxCWlgmnbCRXw=w727-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/dctP27V/Lullaby.jpg',
     title: 'Lullabye',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -217,7 +217,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/HBvXF__uKTSVjDd1OfnnKdqI8beh5X4Cuf2iLhM7UkLYG3dX-QNYd3EOE4Q42FUZzU_zUWhzH3PiDyUQ1Jo1FjxhbJWK8xS-zfR2WscvnEVfxPLyt4YAmf6fLiq4bEYHYjBZp2mvXyF4D7gA1MwWa2huEOF66dYHmuLgr7Oofl2qLFh0qubpQnCTMm6MrOXhf2pdwxyMctGoUeAHD2f5CQ9iManLoYK-w9AZguWO2H5XsySDkpWlNNi1xbkC0lJjhKzb1y4nMqJ6lC0m-Uf59n0tctrSwKi-7Yejo91G_ivkM06B2XvPBKq6bDlSvzt_hgHSFPiW1nrK5VYdsNMoy3wFZvAz3tOQkKIKzYIjKm0BFV9WupULI76tzP5LKwCMqI69MkxmC0qQi2n8K0S9giwCoOEK1UelB8k3CAEYaitBtqVU9ZjC1ThkyS4owBIziLwJdp8M2UBHn5BSUV3avyMjydJ4HV4FBQJt7BICBVEM57xNeqQkcP-fOjiRNT89ZNbNryBnlXteXoowulbmXDCpR-F_HmmZuLTir8Y8i1DK7042jyXnnmF95NuiR2sOZkA_4XVWaCCri5FWD_jN_PE-BTkNVQW8wSg0L-uGU8A3Q4if7q5nDKQEbMbqjo7JYUrwhziEbxd7tn5Nn0znZIH9rIRRqgUgOSM2_f3kpSio7guGOPb_MKJmuB4_9g=w782-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/MZLWT5j/She-Was-ANatural.jpg',
     title: 'She was a natural',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -227,7 +227,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/QAbOTiNJ08PuJ5O3yHcSgNJgvZHYt_6_SX18AkzkDaoLTDqGygAf3NvRB_nuY3gKShuOqNvpB4fkpXNS8STIasv4VhB83jWs5ZJyZGCiB8H1GgZHjI-rU1xJITQfSupkLqvUyRTccJ5cRFbSk4mirVPOVh6IlTQsX2i-jO5d3V1hx_pEUM6gBSmBMGZNMByk_VEzEQIaJ23UfzPkxJXzxArC55Fi9sQN-aYEhmLJIN_bDDbYeGoq4-jh-IPW-vaYdUIiqyZgxdH3uzj1Y9mAtjb0aV3bkcIhpcPkq_qLyJ5hU46qK2e9OPCmjQWN6Zr61E9ReiLLQEJYzEeQC2COq74qntu3oxBFuDE5iyt3JJLugaOMcMbiYAcWShLE2kLnllwDpAxqqByPfDYlcRIuKonm2PrM87VrPYsevVDuQ7ornJ1PnBRCi4WS-RyzgjvoVkUgJSeK4AXgaf2r_7uOvrdTtPrlGBpDfg-RTv0b9nUYm97QcM4xIplajfVHaBE3j2WubMWZvkRknLimKhhUVfDinpdM7G4YDKc_xD1QZ1cazbp6ONrYOJrpQza4xRAP-1MNqVsk7zI3SsZAO6R4HL0AyYt0-DrwwhRPdoOmdFOtjkYzWw9xbBhUBfl8b7AqQErG9q-qG7jHLOv59N1m6TElGHXjiBQYolnEA6yo8sLoLSfoSROGM1dDn06TqA=w578-h800-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/M71ww46/Subtly-Game-Weak.jpg',
     title: 'Subtlety wasn\'t her strong suit',
     author: 'Sandy Calhoun',
     year: 2015,
@@ -237,7 +237,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/viVS0TQRjvyXNg5aK8qBqeN32pNCpreCiOm3gglU4STT3_-26ISquI-YMLtu1HQs6Zel8okg4UsbQHpYGMjbVOxahU0puxeiUIkLNo85IUwnp7O898McukJKKqpyl6L5AH6-HEV1ZfJpzDGkbFUdREH8jC2KOJ_0tsqpaBIL6ds1O1a-twL_hmkuNrsbUuvcCm6Rjj7dwa9K2JYcbhUZ2kdVKKdjOd60shr4zaHti2xzW2-csVOpZl63X7-V7XR_Ix_mHHnpJqudvr0R8-LkobcO7acDJ-FzDUfN5OaWDYzOtMILW87Hau9bxCrM1nEx6ZzKB0PeT0qlLhPakySRVU8xo16OYq23Fbxurb7O_TuVLwZSlNCk6XwVhxye-SWUcJGcS_wvBsOC4MLBFgRnBquK-adqo0ZYILKmfgs86ylEs25E_RqtGLO2fXmRyL0jYlWN-v3OjD4OHMqV-LzB6keb_3QIVD4lHa6l47fHKZR_fyDGoNpQipLYRenRG8X-1xBPSuiig4eFsYY5kH3-16kvkQIFbT3Ld1YPc2QImR53R7WJkbRF-Z_vx_0Ovnp2OzuoegYbC6xQVqLWmuFj9nANq4ESIyUi3zAASiUrwWdd1v7STpK4W2CJ_aSDmW3haEfZICWGCr75_yD1bSlHZsLh7JMTmTg6m3sEOlfh4-gYCyz22HQwIpbZsbn5xg=w619-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/xFh3YqR/ps-image.jpg',
     title: 'Anne',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -248,7 +248,7 @@ const artSeed = [
     price: 500 
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/1qFlUNRtmz-RYS8a5HvYgHGn6_VqLkOtwLzj8Llyq4cR7yn5NX6wg2EsR9ugTk6-B6nUfW4IVhfoWb5gBe2UTdIC9ieioR_VZuOMmBWfr3_bdlAe3s9TEDFKxVMwlcl9sl8YxHjKMF6bGI4fQS3BSOyEL4nudgMBWziLptrUGGKZW1CAa4GRtsPKmzYwo1OMflTb7y9iuG4RfBgTzgpYaiP5DizXmmu5Ba1b2Rr7DJMsMRyB8HMs80cm0wNsECnnHb_EmUcNOFxkwozAWIcfEfZHFuew1kAf-a1LkxuX4ip5jdEhHPfbWgZNNb_9hmfLAuG6NhgmStacYfOwqAuMvzudMKk227-EoWaETzRkBS_IQ6b2W73I4ciyqArW7QeqbA79l96pVlgSGpiXq6-n5m0ByLl9ZBFV8mqefNJoziYg9GDBmlROGpxzRojPLi93E212KKYNOmPHYOxVr6NZKlEH69jR8VrwGHp8SSi1ZlCFoc-xTtHC9D38P0yZn_72O02F4sbaq1a20G_kYUYP7wQDx_uzxbvydrd4QzQFhu4miQ_QC-aDx37Pg36xvvvPuj1g-LY8AeNvCQvwZPe7gwr27nuU3jLC0JdbXmjmeCuZtPO8TJXSiZeTV_LlTQDuOhXellsP3ZsamNNht-nKhXoDR5fo8vnTVDqdUx9lIKzxXgNdQh_iMbr_-DKt_A=w727-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/vhgHjJ3/One-Trick-Pony1.jpg',
     title: 'His birthday suit was wearing thin',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -259,7 +259,7 @@ const artSeed = [
     price: 500
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/Mh8M7nUj3seN3zV2dScd64WxwHf83vg2qhzCjrmMRsuNPkQkskfaR4noOlo-ZkK_ti-WjdfW3K1T5Cd_pi4F_lOkMC-aPZgXlks1mwuhwOg6qmFt57iI5ORlYGUR1WQhtg3K78C4CA0y4wWB-tBlAysLT1Xzd-qXFU-x1Lr0nK2US1SCVvvzX41x2aq8nF79qqACBnmOxnrowpUiI587zIXkSJuvB_WPEj1BBooHSsbtJ-f_ogUk_KTtn0pw-8vRK8-PCltOkptQi3Q8NMTCOjufMVxJuzHWmx-w5Z5y-EDtJhmy009jmnVFUU7e3N8__vPoC64q5xwKBkJ7Xl1h7c4Co-J0DsMGRPWKf_0mQ6C2YQEJxVs7Kb4WOA4gk34H0k7mB6yh38onsi095vq2qu-KUkcrvqaLTC_6L3-wLn_Uh9FxIcA_M3liBNSBuPAQhVG3sISRLjbKHYWhGzIsrsyTC3x011DzQrDNBM8p_V6ldbJnGavOgOjxszh1YRpu4BdKTMgbXrLMa-usSJvsa36Tdjvj62Kk0CQw1ZEBO25L4JK5cDWBnH_iUE5cp4GK85La4j2V4AzPnz0TJoYYmnmZib7f6rNmP247PpZj2a2evNa6yWthoTfzl2hfE9mFjpDOsM8jC63WfthrGlMPTopkZc9RPE3fo7tC173mTd_1NXFHhjYe30eoVoMAlg=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/Fn0xCsR/Bathtime1.jpg',
     title: 'Bathtime',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -270,7 +270,7 @@ const artSeed = [
     price: 700
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/DRHt16Stz1J08DY7CWQIaDfE4emMQUqdfgT0F28QlcduDovUiv_8HegdGJ70GO8JxcwIr9lwZE-dFuYERuK1xGoFSQx6hjtsUWyu_5n3G1l77rflLHZzHIrKP_46z70yAITOqNmFvZqoRrqVBOx8SWj1k10l5UAVHI8xhL7ZmFgesHyBUoK1fao3H59-fK6VclIhTd1g9RNnmPvK-PiVHfortwZH9Os3Co_y_VknmWRH2K05yrutu4O1ROugFmnaXJQd_2adTZ41LkDcYaAsXo2TqGROtfdcA6DtJGT_FlAfBnsdfCVKOEyjCiIyfknclL79EbsQWMNPWUJKutpz7qMTyMPKXU6_cN3BEqH6R2Xb-Tt-oorthlUrtPeELEVHOaMJlV7NeNS55WOPyCNN9z3SfE8S07Z_7pt_OJOvo8HlD7nSK3sXFkhuy2xwyyUF0DVT-OODeRLzC89pHGQDv8ngUP5BbCJSFW2edsx4dlG5W9Drin3r23IXYWLrDl1U4A8GA8OaAEtmLEbHy1_r20Agzkjvooo_TztVEwGw50UO4drq1vbcK9NL9LsX79Hgc29g8EIzqtJAL_homVY0s9Gi7r-R_V9DepLfjm6Lh8hbx-FuDDqOaiozWTefA8nnRzRsPAPYgRYTEPwXO3cTpLK-hV6ug6L1EdIpV0lv9kdziffxoEYhRSItO16jwQ=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/dP5mC7h/Lookout.jpg',
     title: 'Look-out',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -281,7 +281,7 @@ const artSeed = [
     price: 800
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/jM9ok9uqiFZqsoeXb9NicjrUxx7oc40cXc9S4ymGHqoh9bxXJZHFumVE_8JWIYwtAwrWEiKaemIw9Krl5ANLOcSmFx-OXhFwLEzio1xuT1vbp8RS6ji7j5piL40_2n4e6hM8DjT5SvdrJKgnSihNbz1steF7hY0PgBLRXajZVFYt79ihhQRWUdYJA1B2iVzGC18NFNERCppRtRwyRu3u8FeL7Bu8RHrDX1LJ_znnVAImbdKUQzHnLahOCQBnlBERmannT_uWH_znG2Vga8sfM_-6YlgQ0okFbYf9nFQbPFPLgaNr3jTy7z0HREPG2Z5tVcuG8lNgS8B9cCRck5zXxzeVC7SWTP37TQjLcnCmxR3rz4CzJF2TDktrKToXEFPIi1TaAS936k59gdigf_8THHx19Zc-r7lIyglQA09re-NcfEY-KRTjqgF8r4d9XBdzQfWKO0nYJQapJcXDiDQwZj37823tiXM7j68oZxA-nN1LNu9nDal18Js0AlPEyOjPLEE0Fe_o8A2Kj6zqcaZ9mlFzkzcn3JNnBgvHNrsX7EEIDiEcW96BK2kg15qqTkoQ2Cuv89LxW6idnQhfKLLSfsojIWtA4nNTxTat9PKS0LqcBfon-aKHP4NT0Dy-vtYt9VzWjN4tFkOsCHFCyuxG2lQzofQ8y1YuIRkvvPmltcF_m_ujIt9sDZIsqdEIxA=w1000-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/5vvnB0P/Babybird0.jpg',
     title: 'Baby bird',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -292,7 +292,7 @@ const artSeed = [
     price: 1200
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/OtOWH-Z4IYLDL0SYQq5SoQVQNyHgfhtTcNG9mqNYBpEw1ZjUJG828-HxLMFh04EVlWrWoNp_48mb-12iyC4ygl2BDjqX2QxSVxBCdDPQPpmnu2UPYMBcbwOuDB7976bh9s8nht8nt2hVbnR0B1Cjiz-OLfqnCwTl2m5TITQ3fPhJLc8Qv29NnSeDtFhheYpVr25WP3inLFOXqxE6gI8CxYlipOk7W7L0LNGMoDET6TvsuhCXlX-Fu9SDx_kFKYxumDniiwCocHHRaydFbr8DJwwcE4hDTtmYwWMNtOhsV7ztP8HSuDXeq7OI3pTDPFmJ6TWvej4WrK9MzE61hwJdl1MrRGVNP4nvVcp7klaXtAMNt8XpXUcWjv_VO4UJOlPzS9UZcUUqdu7K3jlVKmZQnWbemIYk5QGe8vF9bwWQaHPSA47TgQm6e0q8ZbB9QUYBA1APCQU6yluTClaR7VftGBM4NJOPReWnZq-Z---T6ypFy1XvfdNtf9-F-IjmjSsXeTS9MQCgoZb-I59tQ3pHVWJYwz7pdl93uIvAWZGnGRbS1XDMBup9tutN-SvQuxZVEqASd4h4etO7Vwsg8vIUSpjfg3AiKT1gWz_-TZHW6XuaIvxgUL6rf71yfKgyz6n6gTf0nnUo2a6bALIgZ2sZ-4KhLumT1_xNl3vbWYb1EHbEXU7GYN4Chlcvwnhk4w=w546-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/HzRVQ0K/Copy-of-Living-her-life-on-the-edge.jpg',
     title: 'Living her life on the edge',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -302,7 +302,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/aLX7W7_EJRPnxY9WBGPBzkgfOKVbS11rxY9llK7Mrh3xDu_1W__s1HAVGjyjsPfdUL_aQkbq3PDPJ2f6q9BJdbbtbPTYGg2oZlJr73R63ulhsFYb5iWqx8YSl5IySdf9O285IFM2D-QYqP2G6Zr4sfTJdJ1GMNwc3iVDwEd8vYhX-jOK3qyoj4XdcCEW_t0CsWj7HP7dzkTFh7K0gLcV099r-IYu3-sSxfSMEn01LGtl9h4HoZEk8VNACN95CJeE8a28EQUY9h8F8iPPFTOt3pbpriJ5x8u54K-KhPstZZpIvUA_OmxlROF-mtaZXw5Oc2-js8zYiH_6ww8cIwvVMWpVcPy-iRCsPCnjehy5K-ggy_EcdDbHwK6HotYX1hn03_vP9GqhVBn-ThagZ9YAfEGw2_K-zdClKipM230rnW23L9YwDFJ4YSExPo6hCG_u7I1XE_4j4nymTb78JDBB5vJRwMmI8Ic6kgcW3q4k-7FG36v-KaesSydcGBWivKQdT5tRmDqQL5Cin1IeTbcOYF_w-Eh6dDt-1SRycKgThz8czQU8LF8JrQJTOKyFGZLxMN8u1F-cUQYMD1nYyyF4FJM0DrHL7jHmX7FRsuXzCTqFODznINAQTJcG8GDJQDBOekyvxkYhkW9AR7p7KQO6sC_xZJ6Gm_bLvhlWeBMIwcklVj_d3T3x_Sg3n9tsvA=w295-h800-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/hgt37nq/Knewhewas.jpg',
     title: 'He just knew he was something else',
     author: 'Sandy Calhoun',
     year: 2015,
@@ -312,7 +312,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/-WcqinL89syay2Icr4Jj-6BL-RFl30TwG6sVXGEyXonAVkeppb9YCA-DWle9EfcbFiskYZcGn1x6qGxwBIZL6_s1vxZzMA-VytORu767KJfeMT46Sv0JMjQ7goIDOdqfj4zVfO2sRC2Rla-3vC-4ZzfZyYNSTeYfk_kvw5EQdvbtdbniw3F3LC3xWROb4q-A7gooxFK91ba0nVH7tr5wGCwvW9Cz_3hwCCNwkXOqMyCoExAWp_eXFXw13QU21LQtOtCPbsprKeriUo5l4HbAjUyCShgLLaWSfGaYhj3eANCjO3Cx7aXdAw8qCV6ghLEfCCwZa3EFrUoacz7wro8jN3tlzfOO66ovKtG_iADIA5-WmGP1OnuTwN7qoH_LCVVsXlb4iitMpBxmCUMoXjqi01fs1drrXoe_kQt0H6LEqc6p7GQJGQXzX3V6XihTQQbJWWleIuFEFI1YsG4SL8frg-qbGCaRxMuErp68jJgvo1BxD4U93KOHeWkNO72W6FR3_k6ceMC66HKKKtuWymn31zkmTg_B75rBzYHz7Wc40zTX3BGuTZdRWDui-d54L-NsXVWsUB5O0yp6NMX2FRYZeDYnO7CrTj2AGeEp-cznbP2uhGLzeJegOWZ0hCEa0xvGUqpjyCM7qjFMnu5fOAq0LTLs_Nz5s3D31u-TNhgFEcH8ASpI4WScIrD9geGosQ=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/VSNRGzy/Copy-of-Blue-2.jpg',
     title: 'Blue',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -323,7 +323,7 @@ const artSeed = [
     price: 1500
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/WI529gHPoxxHVSInY3N4J_rKnNIgPO61XINZlN8OuWe5O3LR4IbfBfa4fC2xeEI0oZS3J0TKt1nw-j4z7kRgeGvqU87SAZNs_YbjmILovZU_Ni5jkRzKabUwP3SJQ_jCGzxGFgpZ__aRHufA61w3wHSgOiGSPC7S6oVudLft3D_yDEO4KYRCosHo8UVlwmtBYVVDDZ070tkygmzVYsvoqJN-5AnZ5P5GGrmZ6T_OJiHqluPFJIDFsugEvC5NaUd-_Vhg1blmVC8f6pdWMmfFhdqlIjdoNhe6VHgCEsC81t2oIsXDnYqdoH_Ktu7kAQQVkbuqZ_J9RzaEq0SSFQQaXvErTb35ItIF0SnhQ8LEsCJtC0VurtTK6kK7aS18Kic8qUzRSL1p5FGj_RtsU7iO9oo4bVNE1DTmFSH1KnVRa_5dKnIT2imvZu7OiQPaamO1sQ_X8QNbB-yWOrTRaI-O4DfrCIpAvsVHtT_FO3tMlX3lgMC62cl0UvzR5QN13YlfQBvVGdNZfUO5SV-b28DnqxZLv_6py0qrvrRTkNXBCobqfxr4aDlVgIj1H_uLdjuHktfD4eJ9oIdXa6vBAvOqLpCztltsmkRU56CnNNL_B-WDcV2EWuFAu5vxbVm_952G8ZT2wg9sXCR9Y8JzzXl_Yb_zQoql58YkREvXyk-IQZBLc6FQMf9w6UikE9AFHg=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/6P1Xr91/Copy-of-Yes-sir-yes-sir-1.jpg',
     title: 'Yes sir, Yes sir',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -334,7 +334,7 @@ const artSeed = [
     price: 1500
   },
   {
-    imageUrl: 'https://lh3.googleusercontent.com/6oxuuBllG_n3YLuE1kIwoVuwbSfoQMXRsRw0r1OdslH-kuGnB5s-nXR_JXHlydMWFbT_Qd5Oo3xIzbmCoBfLfF0DPnPgGiC23ht8EWtRQ_XvKbJATyVBril9r4kTXKzL6g1HaNeNSl0rdcz7g-Qmg93jqh7P_6zBkK83OkZlLTNVvZe89LNj__-mlA47gdd3-fEFDjHh4CDHcOyAAWjHn5KoBr23vQXG7B3x3m1B5nEZyqYpPzdOx74UJx8MTrRcxqy4oFgaO_PblGH5nXW9ZxM72Ra3Ayltygg3mt_828eKaPC0cxRwLz5BBw8xTChoxn6G9ZZSxt3RTy-nDj_p92pMulJLFjhk1Uv5VmYgvzc8sHLbMEFIBVfzytFN6ifhiqBw9i9N8eQLq3SZafkFpOdbR5e7Kt6YN3mH8QTMjlayGrNdPY9Cz46AmM4e38tuhkUjFZU2j1mjFFOALOyFwGyeEGo04hyoYSGFfCllWFL2qOoIvW7B_KskXQqecWlKEXsb-HnNj80iD7SiNE2Sg6ZfsW2lof0NM7HsXVkhysotp9DS8et1rbuhvteck64HD_L-0N6e-s66tqyhCRdwnYpSQ2Z4YwllFih99Aa_QnjxQjpbXRbtB5VNzoQXgiEtyiJM1nNlYi_QA3k_V9CLCyjfdGvbDMjJ9hdj2LNpyD2EXN97SKa6EKFbpJqMqg=w1292-h969-no?authuser=0',
+    imageUrl: 'https://i.ibb.co/SckGcRt/Copy-of-Leveret.jpg',
     title: 'Leveret',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -344,7 +344,6 @@ const artSeed = [
     wallPiece: false,
     price: 1000
   },
-
 ]
 
 db.Arts
