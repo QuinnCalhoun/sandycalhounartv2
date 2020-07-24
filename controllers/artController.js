@@ -100,9 +100,6 @@ module.exports = {
     },
     sendMessage: async function (req, res) {
         console.log(req.body)
-        // Generate test SMTP service account from ethereal.email
-        // Only needed if you don't have a real mail account for testing
-      
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
           host: "smtp.gmail.com",
@@ -128,8 +125,8 @@ module.exports = {
           to: "quinn.tcalhoun@gmail.com", // list of receivers
           subject: `${req.body.subject}`, // Subject line
           text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
-        });
-      
+        }).then(info => console.log(info))
         console.log("Message sent: %s", info.messageId);
+        
       }
 }
