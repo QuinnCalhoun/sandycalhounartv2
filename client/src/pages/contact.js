@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Segment, Header, Grid, Image, TextArea } from 'semantic-ui-react'
+import { Form, Segment, Header, Grid, Image, TextArea, Button } from 'semantic-ui-react'
 import axios from 'axios'
 
 const Contact = () => {
@@ -52,12 +52,13 @@ return (
                     </p>
                 <Segment>
                     <Form>
-                        <Form.Input onChange={(e, d) => setName(d.value)} placeholder='Name' />
-                        <Form.Input onChange={(e, d) => setEmail(d.value)} placeholder='Email' />
-                        <Form.Input onChange={(e, d) => setSubject(d.value)} placeholder='Subject' />
-                        <TextArea onChange={(e, d) => setMessage(d.value)} class='field' placeholder='Message' style={{ height: '150px' }} />
+                        <Form.Input onChange={(e, d) => setName(d.value)} value={name} placeholder='Name' />
+                        <Form.Input onChange={(e, d) => setEmail(d.value)} value={email} placeholder='Email' />
+                        <Form.Input onChange={(e, d) => setSubject(d.value)} value={subject} placeholder='Subject' />
+                        <TextArea onChange={(e, d) => setMessage(d.value)} value={message} class='field' placeholder='Message' style={{ height: '150px' }} />
                         <Form.Button content={send} onClick={emailer} type='Submit' />
                     </Form>
+                    <Button content='Reset form' onClick={() => resetForm()} />
                 </Segment>
             </Grid.Column>
             <Grid.Column width='10'>
