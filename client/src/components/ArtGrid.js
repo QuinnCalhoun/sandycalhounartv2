@@ -49,8 +49,26 @@ const ArtGrid = () => {
     function cardBuilder(array) {
         return (
             array.map((data) => {
+                console.log(data)
                 return (
-                    <Modal dimmer='inverted' closeIcon={<Icon name='close' color='black' />} trigger={<Image style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }} id='gridImage' alt={data.title} src={data.imageUrl} />} >
+                    <Modal
+                        dimmer='inverted'
+                        closeIcon={<Icon name='close' color='black' />}
+                        trigger={
+                            <picture>
+                                <source media="(max-width: 479px)" srcSet={data.srcSet.w200} />
+                                <source media="(max-width: 800px)" srcSet={data.srcSet.w740} />
+                                <source media="(max-width: 1080px)" srcSet={data.srcSet.w983} />
+                                <source media="(max-width: 1200px)" srcSet={data.srcSet.w1182} />
+                                <source media="(max-width: 1400px)" srcSet={data.srcSet.w1323} />
+                                <source media="(max-width: 1600px)" srcSet={data.srcSet.w1400} />
+                                <Image
+                                    style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }}
+                                    id='gridImage'
+                                    alt={data.title}
+                                    src={data.imageUrl} />
+                            </picture>
+                            } >
                         <Modal.Header>
                             {data.title}
                             <p style={{ fontSize: '1rem' }}>

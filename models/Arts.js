@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const ArtSchema = new Schema({
-    imageUrl: { type: String, required: [true, 'Must have photo url'] },
+    imageUrl: { type: Array, required: [true, 'Must have photo url'] },
+    srcSet: {type: Object, required: [true, 'the performance, dog']},
     title: { type: String, required: [true, 'Must input a title'] },
     author: { type: String, required: [true, 'Please input an author'] },
     year: { type: Number, required: [true, 'Please input year made'] },
