@@ -122,7 +122,7 @@ module.exports = {
         // send mail with defined transport object
         let info = await transporter.sendMail({
           from: `${req.body.name}`, // sender address
-          to: "quinn.tcalhoun@gmail.com", // list of receivers
+          to: "sandycalhounart@gmail.com", // list of receivers
           subject: `${req.body.subject}`, // Subject line
           text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
         }).then(koosl => res.json(koosl))

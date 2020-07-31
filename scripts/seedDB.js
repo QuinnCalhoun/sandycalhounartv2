@@ -19,7 +19,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: '404',
+    imageUrl: 'https://i.ibb.co/xJcjJ0H/Mama-Sputnick.jpg',
     title: 'Mama Sputnik',
     author: 'Sandy Calhoun',
     year: 2017,
