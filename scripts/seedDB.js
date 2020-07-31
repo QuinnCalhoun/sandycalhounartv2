@@ -27,14 +27,14 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: ['404'],
+    imageUrl: ['https://i.ibb.co/xJcjJ0H/Mama-Sputnick.jpg'],
     srcSet: {
-      w200: '',
-      w740: '',
-      w983: '',
-      w1182: '',
-      w1323: '',
-      w1400: ''
+      w200: 'https://i.ibb.co/8YTmt1n/Mama-Sputnick-sg8ki4-c-scale-w-200.jpg',
+      w740: 'https://i.ibb.co/hsxL72K/Mama-Sputnick-sg8ki4-c-scale-w-702.jpg',
+      w983: 'https://i.ibb.co/cyS14Pb/Mama-Sputnick-sg8ki4-c-scale-w-969.jpg',
+      w1182: 'https://i.ibb.co/2SSdFHQ/Mama-Sputnick-sg8ki4-c-scale-w-1193.jpg',
+      w1323: 'https://i.ibb.co/xqX8W2J/Mama-Sputnick-sg8ki4-c-scale-w-1291.jpg',
+      w1400: 'https://i.ibb.co/gDF8tyg/Mama-Sputnick-sg8ki4-c-scale-w-1400.jpg'
     },
     title: 'Mama Sputnik',
     author: 'Sandy Calhoun',
