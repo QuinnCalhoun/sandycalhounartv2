@@ -1,5 +1,7 @@
 const db = require('../models')
 const nodemailer = require('nodemailer')
+const smtpTransport = require('nodemailer-smtp-transport')
+
 require('dotenv').config()
 
 
@@ -103,32 +105,30 @@ module.exports = {
     sendMessage: async function (req, res) {
         console.log(req.body)
         // create reusable transporter object using the default SMTP transport
-        let transporter = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 465,
-          secure: true, // true for 465, false for other ports
-          auth: {
-            user: creds.USER, // generated ethereal user
-            pass: creds.PASS, // generated ethereal password
-          },
-        });
+        let transporter = nodemailer.createTransport(smtpTransport({
+            service: 'gmail',
+            auth: {
+                user: creds.USER, // generated ethereal user
+                pass: creds.PASS, // generated ethereal password
+            },
+        }));
 
         transporter.verify((error, success) => {
             if (error) {
-              console.log(error);
+                console.log(error);
             } else {
-              console.log('Server is ready to take messages');
+                console.log('Server is ready to take messages');
             }
-          });
-      
+        });
+
         // send mail with defined transport object
         let info = await transporter.sendMail({
-          from: `${req.body.name}`, // sender address
-          to: "quinn.tcalhoun@gmail.com, sandycalhounart@gmail.com", // list of receivers
-          subject: `${req.body.subject}`, // Subject line
-          text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
+            from: `${req.body.name}`, // sender address
+            to: "quinn.tcalhoun@gmail.com, sandycalhounart@gmail.com", // list of receivers
+            subject: `${req.body.subject}`, // Subject line
+            text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
         }).then(koosl => res.json(koosl))
         console.log("Message sent: %s", info.messageId);
-        
-      }
+
+    }
 }
