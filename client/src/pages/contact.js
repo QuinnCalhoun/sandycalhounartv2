@@ -18,7 +18,7 @@ const Contact = () => {
             subject: subject,
             message: message
         }
-        axios.post('https://sandycalhounart.herokuapp.com/api/contact', data)
+        axios.post('http://sandycalhoun.com/api/contact', data)
             .then(res => {
                 console.log(res)
                 if (res.status === 200) {
