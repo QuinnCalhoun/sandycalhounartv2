@@ -18,7 +18,7 @@ const Contact = () => {
             subject: subject,
             message: message
         }
-        axios.post('http://www.sandycalhoun.com/api/contact', data)
+        axios.post('https://www.sandycalhoun.com/api/contact', data)
             .then(res => {
                 console.log(res)
                 if (res.status === 200) {
