@@ -8,7 +8,7 @@ const Upcoming = () => {
                 <Image
                     as='a'
                     href='https://www.appliedcontemporary.com/current-exhibiiton'
-                    src={require('../assets/pics/appliedcontemp.jpg')}
+                    src={require('../assets/pics/appcon.jpg')}
                     alt='Applied Contemporary in Oakland' />
             </Grid.Column>
         </Grid>
