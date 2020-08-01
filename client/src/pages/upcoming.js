@@ -1,11 +1,13 @@
-import React from 'react' 
-import { Container, Image } from 'semantic-ui-react'
+import React from 'react'
+import { Image, Grid } from 'semantic-ui-react'
 const Upcoming = () => {
- 
+
     return (
-        <Container>
-            <Image as='a' href='https://www.appliedcontemporary.com/current-exhibiiton' src={require('../assets/pics/appliedcontemp.jpeg')} style={{maxWidth: '350px'}} alt='Applied Contemporary in Oakland' />
-        </Container>
+        <Grid stackable widths='2'>
+            <Grid.Column>
+                <Image as='a' href='https://www.appliedcontemporary.com/current-exhibiiton' src={require('../assets/pics/appliedcontemp.jpeg')} alt='Applied Contemporary in Oakland' />
+            </Grid.Column>
+        </Grid>
     )
 }
 
