@@ -8,7 +8,7 @@ mongoose.connect(
 
 const artSeed = [
   {
-    imageUrl: 'https://i.ibb.co/3rWSRvV/Word-Keeper.jpg',
+    imageUrl: 'https://i.ibb.co/0fp8Ry9/Word-Keeper-opt.jpg',
     title: 'It must be Monday',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -19,7 +19,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/xJcjJ0H/Mama-Sputnick.jpg',
+    imageUrl: 'https://i.ibb.co/kcX9Kwm/Mama-Sputnick-opt.jpg',
     title: 'Mama Sputnik',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -30,7 +30,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/K7Lp278/The-truth-was-beginning-to-sink-in.jpg',
+    imageUrl: 'https://i.ibb.co/tb6fWDH/The-truth-was-beginning-to-sink-in-opt.jpg',
     title: 'Reality was beginning to sink in',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -40,7 +40,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/N3LtJ0K/Too-Big-For-Britches.jpg',
+    imageUrl: 'https://i.ibb.co/j3JdLkx/Too-Big-For-Britches-opt.jpg',
     title: 'Oh, yeah',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -51,7 +51,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/mh2GJqK/innerchild.jpg',
+    imageUrl: 'https://i.ibb.co/HPyCmgR/innerchild-opt.jpg',
     title: 'His inner child was becoming a burden',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -62,7 +62,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/K9gHvwP/OpenWide.jpg',
+    imageUrl: 'https://i.ibb.co/Y23Kzq4/Open-Wide-opt.jpg',
     title: 'Uncle Chester likes his cherries',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -72,7 +72,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://i.ibb.co/kV7fkWG/beveryquiet.jpg',
+    imageUrl: 'https://i.ibb.co/7gFb3kp/beveryquiet-opt.jpg',
     title: 'Be verwy, verwy, quiet...',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -82,7 +82,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/YNqWVcP/Needy-Inner-Child.jpg',
+    imageUrl: 'https://i.ibb.co/dP2LTXN/Needy-Inner-Child-opt.jpg',
     title: 'I have a needy inner child',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -92,7 +92,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/tP27f2y/Princess-test-fail-1.jpg',
+    imageUrl: 'https://i.ibb.co/3mXHVS8/inner-Princess-opt.jpg',
     title: 'Searching for her inner princess',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -103,7 +103,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://i.ibb.co/2hLhX5D/Getawaywithbaggage.jpg',
+    imageUrl: 'https://i.ibb.co/ZBQXSXW/Getawaywithbaggage-opt.jpg',
     title: 'Getaway, with baggage',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -114,7 +114,7 @@ const artSeed = [
     wallPiece: false
   },
   {
-    imageUrl: 'https://i.ibb.co/R2PJmn3/Day-She-Could-Not-Fly.jpg',
+    imageUrl: 'https://i.ibb.co/2yn2dtg/Day-She-Could-Not-Fly-opt.jpg',
     title: 'The day she learned she couldn\'t fly',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -124,7 +124,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/LS01ty1/Didntlikewherethiswasheaded.jpg',
+    imageUrl: 'https://i.ibb.co/Px7QSpN/Didntlikewherethiswasheaded-opt.jpg',
     title: 'He didn\'t like where this was going',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -134,7 +134,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/swsgMRj/More-Dangerous.jpg',
+    imageUrl: 'https://i.ibb.co/5941QmN/More-Dangerous-opt.jpg',
     title: 'More dangerous than she appears',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -145,7 +145,7 @@ const artSeed = [
     price: 750
   },
   {
-    imageUrl: 'https://i.ibb.co/gPFS23j/Naturalpeoplepleaser.jpg',
+    imageUrl: 'https://i.ibb.co/9Y0PQNQ/Naturalpeoplepleaser-opt.jpg',
     title: 'Natural born people-pleaser',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -156,7 +156,7 @@ const artSeed = [
     price: 800
   },
   {
-    imageUrl: 'https://i.ibb.co/TR2fZ10/Waiting-For-Sign.jpg',
+    imageUrl: 'https://i.ibb.co/HBDxxj9/Waiting-For-Sign-opt.jpg',
     title: 'Waiting for a sign',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -167,7 +167,7 @@ const artSeed = [
     price: 740
   },
   {
-    imageUrl: 'https://i.ibb.co/njvrj6D/Crybaby.jpg',
+    imageUrl: 'https://i.ibb.co/jJrcB0K/Crybaby-opt.jpg',
     title: 'Crybaby',
     author: 'Sandy Calhoun',
     year: 2018,
@@ -177,7 +177,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/tzrJsyn/She-Was-BEginning.jpg',
+    imageUrl: 'https://i.ibb.co/XCQTdGt/She-Was-BEginning-opt.jpg',
     title: 'She was beginning to wonder...',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -187,7 +187,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/0tzSfsx/Unresolved-Issues.jpg',
+    imageUrl: 'https://i.ibb.co/CwrsDw8/Unresolved-Issues-opt.jpg',
     title: 'She was beginning to think he had unresolved issues',
     author: 'Sandy Calhoun',
     year: 2014,
@@ -197,7 +197,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/6ZMR3H0/holdingon.jpg',
+    imageUrl: 'https://i.ibb.co/3f35vrx/holdingon-opt.jpg',
     title: 'They said it would be easy',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -207,7 +207,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/dctP27V/Lullaby.jpg',
+    imageUrl: 'https://i.ibb.co/9pq4xZW/Lullaby-opt.jpg',
     title: 'Lullabye',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -217,7 +217,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/MZLWT5j/She-Was-ANatural.jpg',
+    imageUrl: 'https://i.ibb.co/XCGHTRr/She-Was-ANatural-opt.jpg',
     title: 'She was a natural',
     author: 'Sandy Calhoun',
     year: 2017,
@@ -227,7 +227,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/M71ww46/Subtly-Game-Weak.jpg',
+    imageUrl: 'https://i.ibb.co/3y52gr2/Subtly-Game-Weak-opt.jpg',
     title: 'Subtlety wasn\'t her strong suit',
     author: 'Sandy Calhoun',
     year: 2015,
@@ -237,7 +237,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/xFh3YqR/ps-image.jpg',
+    imageUrl: 'https://i.ibb.co/h8hrdZG/ps-image-opt.jpg',
     title: 'Anne',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -248,7 +248,7 @@ const artSeed = [
     price: 500 
   },
   {
-    imageUrl: 'https://i.ibb.co/vhgHjJ3/One-Trick-Pony1.jpg',
+    imageUrl: 'https://i.ibb.co/SX4srG5/One-Trick-Pony1-opt.jpg',
     title: 'His birthday suit was wearing thin',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -259,7 +259,7 @@ const artSeed = [
     price: 500
   },
   {
-    imageUrl: 'https://i.ibb.co/Fn0xCsR/Bathtime1.jpg',
+    imageUrl: 'https://i.ibb.co/k3h82hV/Bathtime1-opt.jpg',
     title: 'Bathtime',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -270,7 +270,7 @@ const artSeed = [
     price: 700
   },
   {
-    imageUrl: 'https://i.ibb.co/dP5mC7h/Lookout.jpg',
+    imageUrl: 'https://i.ibb.co/vVGt3yp/Lookout-opt.jpg',
     title: 'Look-out',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -281,7 +281,7 @@ const artSeed = [
     price: 800
   },
   {
-    imageUrl: 'https://i.ibb.co/5vvnB0P/Babybird0.jpg',
+    imageUrl: 'https://i.ibb.co/93X17tc/Babybird2-opt.jpg',
     title: 'Baby bird',
     author: 'Sandy Calhoun',
     year: 2019,
@@ -292,7 +292,7 @@ const artSeed = [
     price: 1200
   },
   {
-    imageUrl: 'https://i.ibb.co/HzRVQ0K/Copy-of-Living-her-life-on-the-edge.jpg',
+    imageUrl: 'https://i.ibb.co/hyjJfwY/lifeontheedge-opt.jpg',
     title: 'Living her life on the edge',
     author: 'Sandy Calhoun',
     year: 2016,
@@ -302,7 +302,7 @@ const artSeed = [
     wallPiece: true,
   },
   {
-    imageUrl: 'https://i.ibb.co/hgt37nq/Knewhewas.jpg',
+    imageUrl: 'https://i.ibb.co/XDHBD9t/Knewhewas-opt.jpg',
     title: 'He just knew he was something else',
     author: 'Sandy Calhoun',
     year: 2015,

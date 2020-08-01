@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://sandycalhounart.herokuapp.com", // <-- location of the react app were connecting to
+    origin: "https://www.sandycalhounart.com", // <-- location of the react app were connecting to
     credentials: true,
   })
 )
