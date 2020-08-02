@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.725.0",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -27,6 +28,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.9.22",
     "nodemailer": "^6.4.10",
+    "nodemailer-ses-transport": "^1.5.1",
     "nodemailer-smtp-transport": "^2.7.4",
     "path": "^0.12.7"
   },

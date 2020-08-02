@@ -1,14 +1,7 @@
 const db = require('../models')
 const nodemailer = require('nodemailer')
-const smtpTransport = require('nodemailer-smtp-transport')
+let aws = require('aws-sdk')
 
-require('dotenv').config()
-
-
-const creds = {
-    USER: process.env.USER,
-    PASS: process.env.PASS
-}
 
 module.exports = {
     //finds all pieces in db
@@ -103,32 +96,30 @@ module.exports = {
             .catch((err) => res.status(422).json(err));
     },
     sendMessage: async function (req, res) {
+        aws.config.loadFromPath('config.json')
         console.log(req.body)
         // create reusable transporter object using the default SMTP transport
-        let transporter = nodemailer.createTransport(smtpTransport({
-            service: 'gmail',
-            auth: {
-                user: creds.USER, // generated ethereal user
-                pass: creds.PASS, // generated ethereal password
-            },
-        }));
-
-        transporter.verify((error, success) => {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Server is ready to take messages');
-            }
+        let transporter = nodemailer.createTransport({
+            SES: new aws.SES({
+                apiVersion: '2010-12-01'
+            })
         });
 
-        // send mail with defined transport object
-        let info = await transporter.sendMail({
-            from: `${req.body.name}`, // sender address
-            to: "quinn.tcalhoun@gmail.com, sandycalhounart@gmail.com", // list of receivers
-            subject: `${req.body.subject}`, // Subject line
-            text: `${req.body.name} at ${req.body.email} sent: ${req.body.message}`, // plain text body
-        }).then(koosl => res.json(koosl))
-        console.log("Message sent: %s", info.messageId);
+        // send some mail
+        transporter.sendMail({
+            from: 'sandycalhounartworks@gmail.com',
+            to: 'quinn.tcalhoun@gmail.com',
+            subject: "subject",
+            text: 'I hope this message gets sent!',
+            
+        }, (err, info) => {
+            if (err) {
+                console.log('this is the error: ' + err)
+            }
+            console.log(info.envelope);
+            console.log(info.messageId);
+            res.json(info)
+        });
 
     }
 }
