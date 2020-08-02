@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'https://www.sandycalhoun.com'
+const baseUrl = 'https://project2-blogger.herokuapp.com'
 export default {
     getArt: function () {
         return axios.get(baseUrl + "/api/art")
