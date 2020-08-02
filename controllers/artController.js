@@ -97,7 +97,11 @@ module.exports = {
             .catch((err) => res.status(422).json(err));
     },
     sendMessage: async function (req, res) {
-        aws.config.loadFromPath('config.json')
+        const config = new aws.Config({
+            accessKeyId: process.env.accessKeyId,
+            secretAccessKey: process.env.secretAccessKey,
+            region: 'us-west-2',    
+        })
         console.log(req.body)
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
