@@ -102,7 +102,7 @@ module.exports = {
             secretAccessKey: process.env.secretAccessKey,
             region: 'us-west-2',    
         })
-        aws.config.update({region:'us-west-2'})
+        aws.config.update(config)
         console.log(req.body)
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
