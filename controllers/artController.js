@@ -2,6 +2,7 @@ const db = require('../models')
 const nodemailer = require('nodemailer')
 let aws = require('aws-sdk')
 
+require('dotenv').config()
 
 module.exports = {
     //finds all pieces in db
