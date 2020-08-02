@@ -107,7 +107,7 @@ module.exports = {
 
         // send some mail
         transporter.sendMail({
-            from: 'sandycalhounartworks@gmail.com',
+            from: 'sandy@sandycalhoun.com',
             to: 'quinn.tcalhoun@gmail.com',
             subject: "subject",
             text: 'I hope this message gets sent!',
