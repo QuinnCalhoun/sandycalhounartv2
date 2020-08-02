@@ -97,6 +97,7 @@ module.exports = {
             .catch((err) => res.status(422).json(err));
     },
     sendMessage: async function (req, res) {
+        console.log(req.body)
         const config = new aws.Config({
             accessKeyId: process.env.accessKeyId,
             secretAccessKey: process.env.secretAccessKey,
@@ -115,8 +116,8 @@ module.exports = {
         transporter.sendMail({
             from: 'sandy@sandycalhoun.com',
             to: 'quinn.tcalhoun@gmail.com',
-            subject: req.body.data.subject,
-            text: `${req.body.data.name} at ${req.body.email} sent: ${req.body.message}`,
+            subject: 'ricecakes',
+            text: `scoorter`,
             
         }, (err, info) => {
             if (err) {
