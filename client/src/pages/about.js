@@ -17,12 +17,13 @@ const About = () => {
         return (shows.map((show) => {
             return (<><Grid.Row key={show._id}>
                 <Grid.Column width='4'>
+                    <h5>{show.title}</h5>
                     {show.year}
                 </Grid.Column>
                 <Grid.Column width='12'>
-                    <h5>{show.title}</h5>
+                    
                     <p>{show.location}</p>
-                    {show.juror ? <p>Juror: {show.juror}</p> : null}
+                    {show.juror ? `Juror: ${show.juror}` : null}
                 </Grid.Column>
             </Grid.Row>
             <Divider /></>)
@@ -56,14 +57,14 @@ has had a solo show at the Pence Gallery in Davis.' />
                             title: <Header as={Accordion.Title} content='Statement' />,
                             content: `Everything that I take in during my incessant people watching and relentless eavesdropping is processed through my own memories and neurotic ruminations and transformed into the final result: an artwork.
                             The essence of my work is not the subject or the medium, but the stories that are discovered that connect the piece to the viewer and to me. I don’t believe I actually create my work as much as discover it as I build.
-                            Clay is the perfect material for this discovery as it allows me to experiment and explore as I construct each piece, looking for a way to balance what I know to be a true story with the story that I want to create.<br />
+                            Clay is the perfect material for this discovery as it allows me to experiment and explore as I construct each piece, looking for a way to balance what I know to be a true story with the story that I want to create.
                             -Sandy Calhoun`,
                         },
                         {
                             key: 'shows',
                             title: <Header as={Accordion.Title} content='Resume' />,
                             content: {
-                                content: ( <Grid columns='2'>{shows ? resumeBuilder() : null}</Grid>)
+                                content: ( <Grid style={{overflow: 'scroll', overflowX: 'hidden', maxHeight: '45vh'}} columns='2'>{shows ? resumeBuilder() : null}</Grid>)
                             },
                         },
                     ]} />

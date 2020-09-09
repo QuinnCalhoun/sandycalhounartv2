@@ -153,7 +153,6 @@ const artSeed = [
     size: {width: 27, height: 6, length: 10},
     shows: [],
     wallPiece: false,
-    price: 800
   },
   {
     imageUrl: 'https://i.ibb.co/HBDxxj9/Waiting-For-Sign-opt.jpg',
@@ -278,7 +277,6 @@ const artSeed = [
     size: {width: 17, height: 10, length: 9},
     shows: [],
     wallPiece: false,
-    price: 800
   },
   {
     imageUrl: 'https://i.ibb.co/93X17tc/Babybird2-opt.jpg',
