@@ -11,6 +11,7 @@ const showSeed = [
         title: 'Dysfunctional Figures',
         location: 'Pence Gallery, Davis, Ca',
         year: 2017,
+        soloShow: true,
     },
     {
         title: '666 Small Works Ceramic Exhibition',
@@ -23,6 +24,7 @@ const showSeed = [
         location: 'San Angelo Museum of Fine Arts, San Angelo, Texas',
         year: 2020,
         juror: 'Jo Lauria',
+        awards: ['First Place']
     },
     {
         title: 'Figure it Out',
@@ -39,6 +41,7 @@ const showSeed = [
         title: 'California State Fair',
         location: 'Cal Expo, Sacramento, Ca',
         year: 2019,
+        awards: ['Award of Excellence']
     },
     {
         title: 'California Clay Competition',
@@ -79,6 +82,7 @@ const showSeed = [
         location: 'The Artery, Davis, Ca',
         year: 2018,
         juror: 'Michelle Gregor',
+        awards: ['Aftosa’s Juror’s Award']
     },
     {
         title: 'Eccentric Imagery',

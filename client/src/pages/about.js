@@ -15,18 +15,23 @@ const About = () => {
 
     const resumeBuilder = () => {
         return (shows.map((show) => {
-            return (<><Grid.Row key={show._id}>
-                <Grid.Column width='4'>
-                    <h5>{show.title}</h5>
-                    {show.year}
-                </Grid.Column>
-                <Grid.Column width='12'>
-                    
-                    <p>{show.location}</p>
-                    {show.juror ? `Juror: ${show.juror}` : null}
-                </Grid.Column>
-            </Grid.Row>
-            <Divider /></>)
+            return (<>
+                <Grid.Row key={show._id}>
+                    <Grid.Column width='5'>
+                        <h5>{show.title}</h5>
+                    </Grid.Column>
+                    <Grid.Column width='1'>
+                        {show.year}
+                    </Grid.Column>
+                    <Grid.Column width='7'>
+
+                        <p>{show.location}</p>
+                        {show.juror ? `Juror: ${show.juror}` : null}
+                    </Grid.Column>
+            <Grid.Column width='3'>{show.awards ? console.log(show.awards) : null}</Grid.Column>
+                </Grid.Row>
+                <Divider fitted />
+            </>)
         }))
     }
 
@@ -64,7 +69,7 @@ has had a solo show at the Pence Gallery in Davis.' />
                             key: 'shows',
                             title: <Header as={Accordion.Title} content='Resume' />,
                             content: {
-                                content: ( <Grid style={{overflow: 'scroll', overflowX: 'hidden', maxHeight: '45vh'}} columns='2'>{shows ? resumeBuilder() : null}</Grid>)
+                                content: (<Grid style={{ overflow: 'scroll', overflowX: 'hidden', maxHeight: '45vh' }} columns='3'>{shows ? resumeBuilder() : null}</Grid>)
                             },
                         },
                     ]} />
