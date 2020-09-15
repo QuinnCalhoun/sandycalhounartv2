@@ -1,80 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Image, Container, Header, Divider, Grid, Accordion } from 'semantic-ui-react'
 import API from '../utils/API'
+import { Link } from 'react-router-dom'
 
 const About = () => {
-
-    const [shows, setShows] = useState()
-    const [mobile, setMobile] = useState(false)
-
-    useEffect(() => {
-        API.getShows()
-            .then(res => {
-                setShows(res.data)
-            })
-    }, [])
-
-    useEffect(() => {
-        (window.innerWidth < 1080) ? setMobile(true) : setMobile(false)
-    }, window.innerWidth)
-
-    const resumeBuilder = (showType) => {
-        if (showType === 'solo') {
-            return (shows.map((show) => {
-                if (show.soloShow) {
-                    return (<>
-                    <Grid.Row key={show._id}>
-                        <Grid.Column width='1'>
-                            {show.year}
-                        </Grid.Column>
-                        <Grid.Column width='5'>
-                            <h5>{show.title}</h5>
-                        </Grid.Column>
-                        <Grid.Column width='3'>{show.awards.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
-                        <Grid.Column width='7'>
-    
-                            <p>{show.location}</p>
-                            {show.juror ? `Juror: ${show.juror}` : null}
-                        </Grid.Column>
-    
-                    </Grid.Row>
-                    <Divider fitted />
-                </>)
-                } else {
-                    return null
-                }
-                
-            }))
-        } else {
-            return (shows.map((show) => {
-                if (!show.soloShow) {
-                    return (<>
-                    <Grid.Row key={show._id}>
-                        <Grid.Column width='1'>
-                            {show.year}
-                        </Grid.Column>
-                        <Grid.Column width='5'>
-                            <h5>{show.title}</h5>
-                        </Grid.Column>
-                        <Grid.Column width='3'>{show.awards.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
-                        <Grid.Column width='7'>
-    
-                            <p>{show.location}</p>
-                            {show.juror ? `Juror: ${show.juror}` : null}
-                        </Grid.Column>
-    
-                    </Grid.Row>
-                    <Divider fitted />
-                </>)
-                } else {
-                    return null
-                }
-                
-            }))
-        }
-    }
-
-    return (
+return (
         <>
             <Header as='h1'>About</Header>
             <Divider />
@@ -106,38 +36,8 @@ const About = () => {
                         },
                         {
                             key: 'shows',
-                            title: <Header as={Accordion.Title} content='Resume' />,
-                            content: {
-                                content: (
-                                    <Grid
-                                        stackable
-                                        style={{ overflow: 'scroll', overflowX: 'hidden', maxHeight: '465px' }}
-                                        columns='3'>
-                                        <Grid.Row>
-                                            <Grid.Column><Header>Solo Showings:</Header></Grid.Column>
-                                        </Grid.Row>
-                                        {!mobile ? <Grid.Row>
-                                            <Grid.Column width='1'><b>Year</b></Grid.Column>
-                                            <Grid.Column width='5'><b>Show</b></Grid.Column>
-                                            <Grid.Column width='3'><b></b></Grid.Column>
-                                            <Grid.Column width='7'><b>Location & Juror</b></Grid.Column>
-                                        </Grid.Row> : 
-                                        null}
-                                        {shows ? resumeBuilder('solo') : null}
-                                        <Grid.Row>
-                                            <Grid.Column><Header>Group Showings:</Header></Grid.Column>
-                                        </Grid.Row>
-                                        {!mobile ? <Grid.Row>
-                                            <Grid.Column width='1'><b>Year</b></Grid.Column>
-                                            <Grid.Column width='5'><b>Show</b></Grid.Column>
-                                            <Grid.Column width='3'><b>Awards</b></Grid.Column>
-                                            <Grid.Column width='7'><b>Location & Juror</b></Grid.Column>
-                                        </Grid.Row> : 
-                                        null}
-
-                                        {shows ? resumeBuilder('group') : null}
-                                    </Grid>)
-                            },
+                            title: <Header as={Accordion.Title} content={<Link to='/resume'>Resume</Link>} />,
+                            
                         },
                     ]} />
 
