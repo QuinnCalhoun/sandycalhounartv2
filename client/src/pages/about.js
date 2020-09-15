@@ -130,7 +130,7 @@ const About = () => {
                                         {!mobile ? <Grid.Row>
                                             <Grid.Column width='1'><b>Year</b></Grid.Column>
                                             <Grid.Column width='5'><b>Show</b></Grid.Column>
-                                            <Grid.Column width='3'><b></b></Grid.Column>
+                                            <Grid.Column width='3'><b>Awards</b></Grid.Column>
                                             <Grid.Column width='7'><b>Location & Juror</b></Grid.Column>
                                         </Grid.Row> : 
                                         null}
