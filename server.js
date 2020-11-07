@@ -38,10 +38,9 @@ app.get('/*', function(req, res) {
 })
 
 // Connect to the Mongo DB
-client.connect(err => {
-  if (err) throw err
-  console.log('connected')
-})
+client.connect()
+mongoose.connection.once('open', () => { console.log('MongoDB Connected'); });
+mongoose.connection.on('error', (err) => { console.log('MongoDB connection error: ', err); }); 
 
 // Start the API server
 app.listen(PORT, function() {
