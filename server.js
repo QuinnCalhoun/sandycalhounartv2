@@ -39,6 +39,7 @@ app.get('/*', function(req, res) {
 
 // Connect to the Mongo DB
 client.connect(err => {
+  if (err) throw err
   console.log('connected')
 })
 
