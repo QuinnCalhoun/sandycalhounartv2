@@ -3,9 +3,7 @@ const path = require('path')
 const nodemailer = require('nodemailer');
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const MongoClient = require('mongodb').MongoClient
-const uri = process.env.MONGODB_URI
-const client = new MongoClient(uri, { useNewUrlParser: true });
+const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -38,9 +36,8 @@ app.get('/*', function(req, res) {
 })
 
 // Connect to the Mongo DB
-client.connect()
-mongoose.connection.once('open', () => { console.log('MongoDB Connected'); });
-mongoose.connection.on('error', (err) => { console.log('MongoDB connection error: ', err); }); 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sandycalhoundb",
+{ useNewUrlParser: true, useUnifiedTopology: true });
 
 // Start the API server
 app.listen(PORT, function() {
