@@ -37,7 +37,11 @@ app.get('/*', function(req, res) {
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sandycalhoundb",
-{ useNewUrlParser: true, useUnifiedTopology: true });
+{ useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+  console.log('connected to database')
+}).catch((err) => {
+  console.log(err)
+})
 
 // Start the API server
 app.listen(PORT, function() {
