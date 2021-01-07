@@ -5,7 +5,7 @@ const Upcoming = () => {
     return (
         <Grid  stackable>
             <Grid.Column >
-                <Segment style={{margin: 'auto'}}  compact>
+                <Segment as='a'  href='https://www.bluelinearts.org/crocker-kingsley-2021-2' style={{margin: 'auto'}}  compact>
                     <Image style={{maxHeight: '500px'}} src={require('../assets/pics/Crocker.jpg')} />
                 </Segment>
             </Grid.Column>
