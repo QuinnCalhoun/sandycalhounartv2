@@ -6,7 +6,7 @@ const Upcoming = () => {
         <Grid  stackable>
             <Grid.Column >
                 <Segment style={{margin: '5% 25%'}} compact>
-                    Check back for upcoming shows
+                    <Image src={require('../assets/pics/Crocker.jpg')} />
                 </Segment>
             </Grid.Column>
 
