@@ -5,8 +5,8 @@ const Upcoming = () => {
     return (
         <Grid  stackable>
             <Grid.Column >
-                <Segment style={{margin: '5% 25%'}} compact>
-                    <Image src={require('../assets/pics/Crocker.jpg')} />
+                <Segment style={{margin: 'auto'}}  compact>
+                    <Image style={{maxHeight: '500px'}} src={require('../assets/pics/Crocker.jpg')} />
                 </Segment>
             </Grid.Column>
 
