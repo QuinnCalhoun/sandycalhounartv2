@@ -342,6 +342,26 @@ const artSeed = [
     wallPiece: false,
     price: 1000
   },
+  {
+    imageUrl: 'https://i.ibb.co/J3fdmZz/Cracked-nut.jpg',
+    title: 'Cracked Nut',
+    author: 'Sandy Calhoun',
+    year: 2020,
+    media: ['clay', 'underglaze', 'glaze'],
+    size: {width: 23, height: 10, length: 16},
+    shows: [],
+    wallPiece: false,
+  },
+  {
+    imageUrl: 'https://i.ibb.co/nwk5Ft7/She-s-got-badges.jpg',
+    title: 'She\'s got badges',
+    author: 'Sandy Calhoun',
+    year: 2020,
+    media: ['clay', 'underglaze', 'glaze'],
+    size: {width: 25, height: 10, length: 8},
+    shows: [],
+    wallPiece: false,
+  },
 ]
 
 db.Arts
