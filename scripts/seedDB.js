@@ -310,7 +310,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/jwFRnKy/Copy-of-Blue-2-gunqj2-c-scale-w-859.jpg',
+    imageUrl: 'https://i.ibb.co/jwFRnKy/Copy-of-Blue-2-opt.jpg',
     title: 'Blue',
     author: 'Sandy Calhoun',
     year: 2020,
