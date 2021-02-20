@@ -310,7 +310,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/VSNRGzy/Copy-of-Blue-2-opt.jpg',
+    imageUrl: 'https://i.ibb.co/jwFRnKy/Copy-of-Blue-2-gunqj2-c-scale-w-859.jpg',
     title: 'Blue',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -321,7 +321,7 @@ const artSeed = [
     price: 1500
   },
   {
-    imageUrl: 'https://i.ibb.co/6P1Xr91/Copy-of-Yes-sir-yes-sir-1-opt.jpg',
+    imageUrl: 'https://i.ibb.co/6P1Xr91/Copy-of-Yes-sir-yes-sir-1.jpg',
     title: 'Yes sir, Yes sir',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -332,7 +332,7 @@ const artSeed = [
     price: 1500
   },
   {
-    imageUrl: 'https://i.ibb.co/SckGcRt/Copy-of-Leveret-opt.jpg',
+    imageUrl: 'https://i.ibb.co/SckGcRt/Copy-of-Leveret.jpg',
     title: 'Leveret',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -343,7 +343,7 @@ const artSeed = [
     price: 1000
   },
   {
-    imageUrl: 'https://i.ibb.co/J3fdmZz/Cracked-nut-opt.jpg',
+    imageUrl: 'https://i.ibb.co/J3fdmZz/Cracked-nut.jpg',
     title: 'Cracked Nut',
     author: 'Sandy Calhoun',
     year: 2020,
@@ -353,7 +353,7 @@ const artSeed = [
     wallPiece: false,
   },
   {
-    imageUrl: 'https://i.ibb.co/nwk5Ft7/She-s-got-badges-opt.jpg',
+    imageUrl: 'https://i.ibb.co/nwk5Ft7/She-s-got-badges.jpg',
     title: 'She\'s got badges',
     author: 'Sandy Calhoun',
     year: 2020,
