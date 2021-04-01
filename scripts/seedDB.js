@@ -244,7 +244,6 @@ const artSeed = [
     size: {width: 19, height: 7, length: 4},
     shows: [],
     wallPiece: true,
-    price: 500 
   },
   {
     imageUrl: 'https://i.ibb.co/SX4srG5/One-Trick-Pony1-opt.jpg',
