@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { Image, Container, Header, Divider, Grid, Accordion } from 'semantic-ui-react'
 import API from '../utils/API'
 

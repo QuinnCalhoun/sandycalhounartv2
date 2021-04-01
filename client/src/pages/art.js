@@ -1,4 +1,3 @@
-import React from 'react'
 import { Header, Divider } from 'semantic-ui-react'
 import { ArtGrid } from '../components/index'
 

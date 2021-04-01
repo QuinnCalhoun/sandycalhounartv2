@@ -1,6 +1,7 @@
 import axios from 'axios'
 const baseUrl = 'https://sandycalhounart.herokuapp.com'
-export default {
+
+const API =  {
     getArt: function () {
         return axios.get(baseUrl + "/api/art")
     },
@@ -11,3 +12,4 @@ export default {
         return axios.get(baseUrl + "/api/shows")
     }
 }
+export default API

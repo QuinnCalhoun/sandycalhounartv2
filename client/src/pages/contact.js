@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import { Form, Segment, Header, Grid, Image, TextArea, Button } from 'semantic-ui-react'
 import axios from 'axios'
+import {LookOut} from '../assets/pics/index'
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -61,7 +62,7 @@ return (
                 </Segment>
             </Grid.Column>
             <Grid.Column width='10'>
-                <Image src={require('../assets/pics/Lookout.jpg')} attached='top' />
+                <Image src={LookOut} attached='top' />
             </Grid.Column>
 
         </Grid>
