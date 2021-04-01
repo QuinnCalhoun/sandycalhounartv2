@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import API from '../utils/API'
 import { Grid, Image, Modal, Segment, Button, Pagination, Icon, Container, Divider } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'

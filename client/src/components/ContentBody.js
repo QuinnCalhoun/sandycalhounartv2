@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
 import { Landing, About, Art, Upcoming, Contact, Resume } from '../pages/index'

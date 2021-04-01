@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import { NavigationBar, ContentBody, Footer } from './components/index'
 import { Grid, Sidebar, Menu } from 'semantic-ui-react';
 import { BrowserRouter as Router, Link } from 'react-router-dom'

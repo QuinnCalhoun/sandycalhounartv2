@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
 import { Image, Container, Header, Divider, Grid, Accordion } from 'semantic-ui-react'
-import API from '../utils/API'
 import { Link } from 'react-router-dom'
+import {BabyBird} from '../assets/pics/index'
 
 const About = () => {
 return (
@@ -10,7 +9,7 @@ return (
             <Divider />
             <Grid columns='2' stackable >
                 <Grid.Column width='6'>
-                    <Image src={require('../assets/pics/BabybirdEdit.jpg')} attached='top' />
+                    <Image src={BabyBird} attached='top' />
 
                 </Grid.Column>
                 <Grid.Column width='10'>

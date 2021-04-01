@@ -1,11 +1,14 @@
-import { Card } from "semantic-ui-react"
+import { Card, Image } from "semantic-ui-react"
 
-const UpcomingCard = () => {
+const UpcomingCard = (props) => {
+
+
+
     return (
         <Card
-            image='../assets/pics/Crow_Show.jpg'
-            header='The Crow Show'
-            meta='National Visual Arts Echibition'
+            image={<img src={props.showImage} style={{height: '275px'}} /> }
+            header={props.showTitle}
+            meta={<div style={{height:'50px'}}>{props.showMeta}</div>}
         />
     )
 }

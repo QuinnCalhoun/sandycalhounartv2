@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { Divider, List, Icon, Grid, Header, } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 

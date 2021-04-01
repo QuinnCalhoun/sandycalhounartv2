@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Icon } from 'semantic-ui-react'
 
 const Footer = () => {
