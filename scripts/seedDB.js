@@ -244,7 +244,6 @@ const artSeed = [
     size: {width: 19, height: 7, length: 4},
     shows: [],
     wallPiece: true,
-    price: 500 
   },
   {
     imageUrl: 'https://i.ibb.co/SX4srG5/One-Trick-Pony1-opt.jpg',
@@ -348,17 +347,29 @@ const artSeed = [
     author: 'Sandy Calhoun',
     year: 2020,
     media: ['clay', 'underglaze', 'glaze'],
+<<<<<<< HEAD
     size: {width: 23, height: 10, length: 16},
+=======
+    size: {width: 10, height: 23, length: 16},
+>>>>>>> 0104615cf8f7ab689d14c8524b2952f266b57a16
     shows: [],
     wallPiece: false,
   },
   {
     imageUrl: 'https://i.ibb.co/g3qcGX4/She-s-got-badges.jpg',
+<<<<<<< HEAD
     title: 'She\'s got badges',
     author: 'Sandy Calhoun',
     year: 2020,
     media: ['clay', 'underglaze', 'glaze'],
     size: {width: 25, height: 10, length: 8},
+=======
+    title: `She's got badges`,
+    author: 'Sandy Calhoun',
+    year: 2020,
+    media: ['clay', 'underglaze', 'glaze'],
+    size: {width: 10, height: 25, length: 8},
+>>>>>>> 0104615cf8f7ab689d14c8524b2952f266b57a16
     shows: [],
     wallPiece: false,
   },

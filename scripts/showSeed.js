@@ -119,6 +119,21 @@ const showSeed = [
         location: 'Blue Line Arts, Roseville, Ca',
         year: 2013,
     },
+    {
+        title: 'Crocker-Kinglsey',
+        location: 'Blue Line Arts. Roseville, CA',
+        year: 2021
+    },
+    {
+        title: 'The Crow Show',
+        location: "The Studio Door. San Diego, CA",
+        year: 2021
+    },
+    {
+        title: 'Emerging + Artist=Show',
+        location: "Gallery 625. Woodland, CA",
+        year: 2021
+    }
 ]
 
 db.Shows
