@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: "*", // <-- location of the react app were connecting to
     credentials: true,
-    
+
   })
 )
 // Serve up static assets (usually on heroku)
@@ -27,8 +27,8 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, './client/build/index.html'), function(err) {
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, './client/build/index.html'), function (err) {
     if (err) {
       res.status(500).send(err)
     }
@@ -37,10 +37,14 @@ app.get('/*', function(req, res) {
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sandycalhoundb",
-{ useNewUrlParser: true, useUnifiedTopology: true });
+  { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+    console.log('connected to database')
+  }).catch((err) => {
+    console.log(err)
+  })
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
 
