@@ -28,7 +28,7 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.6.3",
     "mongoose": "^5.12.3",
-    "nodemailer": "^6.4.10",
+    "nodemailer": "^6.6.3",
     "nodemailer-ses-transport": "^1.5.1",
     "nodemailer-smtp-transport": "^2.7.4",
     "path": "^0.12.7"

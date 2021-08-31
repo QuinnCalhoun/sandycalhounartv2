@@ -1,6 +1,6 @@
-import { Image, Grid, Segment, Header } from 'semantic-ui-react'
+import { Image, Grid, Segment, Header, Divider, Button } from 'semantic-ui-react'
 import UpcomingCard from '../components/upcomingContent'
-import { CrowShow, Gallery625 } from '../assets/pics/index'
+import { Storytime } from '../assets/pics/index'
 
 
 const Upcoming = () => {
@@ -11,22 +11,18 @@ const Upcoming = () => {
                 <Header size='large' content={'Upcoming Shows and Exhibitions'} />
             </Grid.Row>
             <Grid.Column >
-                <Segment compact>
-                    <UpcomingCard
-                        showImage={CrowShow}
-                        showTitle={'The Crow Show'}
-                        showMeta={['Thursday, April 1st 5-10pm',<br />,'Saturday, April 17th 4-9pm', <br/>, <a href='https://thestudiodoor.com/the-crow-show'>Click Here for More Details</a>]}
-                    />
+                <Segment attached='top'>
+                    <Header>Storytime - Opening from 3pm - 5pm,<br /> September 25th</Header>
+                    <Divider />
+                    <Image src={Storytime} />
+                </Segment>
+                <Segment attached='bottom'>
+                    Showing in Alpha Fired Arts, <a href='https://www.google.com/maps/place/4675+Aldona+Ln,+Sacramento,+CA+95841/data=!4m2!3m1!1s0x809ad9316c971b43:0xceba24a434745f5?sa=X&ved=2ahUKEwix9rKN-tvyAhXlLX0KHc0tD7QQ8gF6BAgOEAE'>4675 Aldona Lane Sacramento, CA</a>
+                    <Button fluid href='https://www.alphafiredarts.com/'>Click here for more info</Button>
                 </Segment>
             </Grid.Column>
             <Grid.Column >
-                <Segment compact>
-                    <UpcomingCard
-                        showImage={Gallery625}
-                        showTitle={'Emerging Artists'}
-                        showMeta={['April 2nd through June 1st, 2021', <br />, <a href={'https://yoloarts.org/gallery-625/'}>Click Here for More Details</a>]}
-                    />
-                </Segment>
+                
             </Grid.Column>
 
         </Grid>

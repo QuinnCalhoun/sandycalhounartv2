@@ -4,6 +4,7 @@ import Gallery625Back from './Gallery625Back.jpg'
 import MoreDangerous from './MoreDangerous.jpg'
 import BabyBird from './BabybirdEdit.jpg'
 import LookOut from './Lookout.jpg'
+import Storytime from './Storytime.jpg'
 
 
 export {
@@ -12,5 +13,6 @@ export {
     Gallery625Back,
     MoreDangerous,
     BabyBird,
-    LookOut
+    LookOut,
+    Storytime
 }
