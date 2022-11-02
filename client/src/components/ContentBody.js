@@ -1,18 +1,20 @@
 import { Container } from 'semantic-ui-react'
-import { Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { Landing, About, Art, Upcoming, Contact, Resume } from '../pages/index'
 
 const ContentBody = () => {
-    return (
-        <Container fluid>
-            <Route exact path='/' component={Landing} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/resume' component={Resume} />
-            <Route exact path='/artworks' component={Art} />
-            <Route exact path='/upcoming' component={Upcoming} />
-            <Route exact path='/contact' component={Contact} />
-        </Container>
-    )
+  return (
+    <Container fluid>
+      <Routes>
+        <Route exact path='/' element={<Landing />} />
+        <Route exact path='/about' element={<About />} />
+        <Route exact path='/resume' element={<Resume />} />
+        <Route exact path='/artworks' element={<Art />} />
+        <Route exact path='/upcoming' element={<Upcoming />} />
+        <Route exact path='/contact' element={<Contact />} />
+      </Routes>
+    </Container>
+  )
 }
 
 export default ContentBody

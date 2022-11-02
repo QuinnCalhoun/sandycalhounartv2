@@ -9,7 +9,6 @@ const ArtGrid = () => {
     const [pages, setPages] = useState()
     const [isDesktop, setDesktop] = useState(window.innerWidth > 767)
     const [currentPage, setCurrentPage] = useState()
-    const [searchterm, setSearchTerm] = useState()
 
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
@@ -50,7 +49,7 @@ const ArtGrid = () => {
         return (
             array.map((data) => {
                 return (
-                    <Modal dimmer='inverted' closeIcon={<Icon name='close' color='black' />} trigger={<Image style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }} id='gridImage' alt={data.title} src={data.imageUrl} />} >
+                    <Modal key={data.title} dimmer='inverted' closeIcon={<Icon name='close' color='black' />} trigger={<Image style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }} id='gridImage' alt={data.title} src={data.imageUrl} />} >
                         <Modal.Header>
                             {data.title}
                             <p style={{ fontSize: '1rem' }}>

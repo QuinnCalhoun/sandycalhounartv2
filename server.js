@@ -17,7 +17,6 @@ app.use(
   cors({
     origin: "*", // <-- location of the react app were connecting to
     credentials: true,
-    
   })
 )
 // Serve up static assets (usually on heroku)

@@ -37,8 +37,6 @@ function App() {
           <Footer />
         </Sidebar.Pusher>
       </Sidebar.Pushable>
-
-
     </Router>
   );
 }

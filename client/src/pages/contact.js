@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Form, Segment, Header, Grid, Image, TextArea, Button } from 'semantic-ui-react'
+import { Form, Segment, Header, Grid, Image, TextArea } from 'semantic-ui-react'
 import axios from 'axios'
 import {LookOut} from '../assets/pics/index'
 
@@ -56,8 +56,8 @@ return (
                         <Form.Input onChange={(e, d) => setName(d.value)} value={name} placeholder='Name' />
                         <Form.Input onChange={(e, d) => setEmail(d.value)} value={email} placeholder='Email' />
                         <Form.Input onChange={(e, d) => setSubject(d.value)} value={subject} placeholder='Subject' />
-                        <TextArea onChange={(e, d) => setMessage(d.value)} value={message} class='field' placeholder='Message' style={{ height: '150px' }} />
-                        <Form.Button content={send} onClick={emailer} type='Submit' />
+                        <TextArea onChange={(e, d) => setMessage(d.value)} value={message} className='field' placeholder='Message' style={{ height: '150px' }} />
+                        <Form.Button content={send} onClick={emailer} type='submit' />
                     </Form>
                 </Segment>
             </Grid.Column>
