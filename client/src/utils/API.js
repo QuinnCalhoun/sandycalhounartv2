@@ -10,6 +10,9 @@ const API =  {
     },
     getShows: () => {
         return axios.get(baseUrl + "/api/shows")
+    },
+    sendMail: (body) => {
+      return axios.post(baseUrl + "/api/contact", body)
     }
 }
 export default API

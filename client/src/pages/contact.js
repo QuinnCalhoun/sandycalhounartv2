@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Form, Segment, Header, Grid, Image, TextArea } from 'semantic-ui-react'
 import axios from 'axios'
+import API from '../utils/API'
 import {LookOut} from '../assets/pics/index'
 
 const Contact = () => {
@@ -19,7 +20,7 @@ const Contact = () => {
             subject: subject,
             message: message
         }
-        axios.post('https://sandycalhounart.herokuapp.com/api/contact', data)
+        API.sendMail(data)
             .then(res => {
                 console.log(res)
                 if (res.status === 200) {

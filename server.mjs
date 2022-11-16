@@ -1,15 +1,14 @@
-import express from 'express'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import { MongoClient } from 'mongodb'
-import { router as routes } from "./routes/index.mjs"
 
 import dotenv from 'dotenv'
 dotenv.config()
 
+import express from 'express'
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -19,12 +18,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 const corsOptions = {
   origin: (origin, callback) => {
-    callback(null, true);
+      callback(null, true);
   },
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   allowedHeaders: ["Access-Control-Allow-Origin", "Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization"],
   credentials: true
 };
+
 app.options('*', cors(corsOptions));
 app.use(cors(corsOptions));
 
@@ -32,6 +32,8 @@ app.use(cors(corsOptions));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+import { router as routes } from "./routes/index.mjs"
 // Add routes, both API and view
 app.use(routes);
 
