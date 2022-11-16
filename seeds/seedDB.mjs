@@ -1,12 +1,4 @@
-const mongoose = require('mongoose')
-const db = require('../models')
-
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  'mongodb://localhost/sandycalhoundb'
-)
-
-const artSeed = [
+export const artSeed = [
   {
     imageUrl: 'https://i.ibb.co/0fp8Ry9/Word-Keeper-opt.jpg',
     title: 'It must be Monday',
@@ -360,16 +352,41 @@ const artSeed = [
     shows: [],
     wallPiece: false,
   },
+  {
+    imageUrl: 'https://i.ibb.co/ZYmF1CH/Facing-the-unpleasant-truth.jpg',
+    title: `Facing the Unpleasant Truth`,
+    author: 'Sandy Calhoun',
+    year: 2021,
+    media: ['Cone 5 clay', 'porcelain', 'underglaze', 'oxide wash', 'glaze'],
+    size: { width: 11, height: 16, length: 10 },
+    shows: [],
+    wallPiece: false,
+  },
+  {
+    imageUrl: 'https://i.ibb.co/1f3C1fm/Far-from-perfect.jpg',
+    title: `Far From Perfect`,
+    author: 'Sandy Calhoun',
+    year: 2022,
+    media: ['Cone 5 clay', 'underglaze', 'glaze'],
+    size: { width: 6, height: 18, length: 6 },
+    shows: [],
+    wallPiece: true,
+  },
+  {
+    imageUrl: 'https://i.ibb.co/6gMWxpT/It-will-be-fun-they-said.jpg',
+    title: `It Will Be Fun, They Said`,
+    author: 'Sandy Calhoun',
+    year: 2022,
+    media: ['Cone 5 clay', 'underglaze', 'glaze'],
+    size: { width: 11, height: 16, length: 10 },
+    shows: [],
+    wallPiece: false,
+  },
 ]
 
-db.Arts
-  .deleteMany({})
-  .then(() => db.Arts.collection.insertMany(artSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+
+
+
+
+
+
