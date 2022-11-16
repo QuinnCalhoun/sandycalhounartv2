@@ -1,5 +1,6 @@
-import {  Grid, Segment, Header } from 'semantic-ui-react'
-// import UpcomingCard from '../components/upcomingContent
+import { Grid, Header } from 'semantic-ui-react'
+import UpcomingCard from '../components/upcomingContent'
+import { Blue, TheHealingShow } from '../assets/pics'
 
 const Upcoming = () => {
 
@@ -8,16 +9,13 @@ const Upcoming = () => {
       <Grid.Row>
         <Header size='large' content={'Upcoming Shows and Exhibitions'} />
       </Grid.Row>
-      <Grid.Column >
-      </Grid.Column>
-      <Grid.Column >
-        <Segment attached='top'>
-          <Header>Check back soon for upcoming shows!</Header>
-        </Segment>
-      </Grid.Column>
-      <Grid.Column >
-      </Grid.Column>
-
+      {/* For when nothing is upcoming */}
+      {/* <UpcomingCard  showImage={Blue} showTitle={'Check back soon for upcoming shows!'}/> */}
+      <UpcomingCard
+        showImage={TheHealingShow}
+        alt={'Healing and the Artist'}
+        showTitle={"Healing and the Artist"}
+        showMeta={"Opening Saturday, Nov 12, 6-9pm. \n Additional dates: Nov 19, 1 - 5 pm & Nov 26, 1 - 5 pm"} />
     </Grid>
   )
 }
