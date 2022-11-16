@@ -5,7 +5,8 @@ import MoreDangerous from './MoreDangerous.jpg'
 import BabyBird from './BabybirdEdit.jpg'
 import LookOut from './Lookout.jpg'
 import Storytime from './Storytime.jpg'
-
+import Blue from './blue.jpg'
+import TheHealingShow from './theHealingShow.jpg'
 
 export {
     CrowShow,
@@ -14,5 +15,7 @@ export {
     MoreDangerous,
     BabyBird,
     LookOut,
-    Storytime
+    Storytime,
+    Blue,
+    TheHealingShow
 }
