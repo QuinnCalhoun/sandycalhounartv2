@@ -31,7 +31,7 @@ const Resume = () => {
                             <Grid.Column width={5}>
                                 <h5>{show.title}</h5>
                             </Grid.Column>
-                            <Grid.Column width={3}>{show.awards.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
+                            <Grid.Column width={3}>{show.awards?.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
                             <Grid.Column width={7}>
 
                                 <p>{show.location}</p>
@@ -76,7 +76,7 @@ const Resume = () => {
                                 <Grid.Column width='5'>
                                     <h5>{show.title}</h5>
                                 </Grid.Column>
-                                <Grid.Column width='3'>{show.awards.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
+                                <Grid.Column width='3'>{show.awards?.length > 0 ? <i> {(show.awards)}</i> : null}</Grid.Column>
                                 <Grid.Column width='7'>
 
                                     <p>{show.location}</p>
@@ -87,7 +87,7 @@ const Resume = () => {
                             <Divider fitted />
                         </>) :
                         (<>
-                            <Grid.Row>
+                            <Grid.Row key={show._id}>
                                 <Grid.Column width='2'  >
                                     {show.year}
                                 </Grid.Column>
