@@ -80,7 +80,7 @@ export const artController = {
   },
   sendMessage: async (req, res) => {
     AWS.config.update({region: 'us-west-2'});
-
+    console.log(req, res)
     let params = {
       Destination: { /* required */
         CcAddresses: [
