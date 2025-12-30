@@ -1,7 +1,20 @@
 import express from 'express'
 export const router = express.Router()
+import rateLimit from 'express-rate-limit'
 import {artController} from '../controllers/artController.mjs'
 import {showController} from '../controllers/showController.mjs'
+
+// Rate limiting for contact form - 5 requests per 15 minutes per IP
+const contactRateLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // Limit each IP to 5 requests per windowMs
+  message: {
+    error: 'Too many requests',
+    message: 'Too many contact form submissions from this IP, please try again later.',
+  },
+  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+})
 
 router.route('/api/art')
     .get(artController.findAll)
@@ -22,4 +35,4 @@ router.route('/api/art/media/:media/:mediatwo?/:mediathree?')
 router.route('/api/shows')
     .get(showController.getShows)
 router.route('/api/contact')
-    .post(artController.sendMessage)
+    .post(contactRateLimiter, artController.sendMessage)

@@ -2,7 +2,7 @@ import express from 'express'
 export const router = express.Router()
 import "dotenv/config.js";
 
-import AWS from 'aws-sdk'
+import { sendContactEmail } from '../services/emailService.mjs'
 
 
 
@@ -79,46 +79,79 @@ export const artController = {
 
   },
   sendMessage: async (req, res) => {
-    AWS.config.update({region: 'us-west-2'});
-    console.log(req, res)
-    let params = {
-      Destination: { /* required */
-        CcAddresses: [
-          'quinn.tcalhoun@gmail.com',
-          /* more items */
-        ],
-        ToAddresses: [
-          'sandycalhounart@gmail.com',
-          /* more items */
-        ]
-      },
-      Message: { /* required */
-        Body: { /* required */
-          Text: {
-           Charset: "UTF-8",
-           Data: `Hello, ${req.body.name} at ${req.body.email} has sent the following message: \n
-           ${req.body.message}`
-          }
-         },
-         Subject: {
-          Charset: 'UTF-8',
-          Data: req.body.subject
-         }
-        },
-      Source: 'sandy@sandycalhoun.com', /* required */
-    };
-    
-    // Create the promise and SES service object
-    const sendPromise = new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise();
-    
-    // Handle promise's fulfilled/rejected states
-    sendPromise.then(
-      function(data) {
-        res.send(data.MessageId);
-      }).catch(
-        function(err) {
-        console.error(err, err.stack);
-      });
+    try {
+      // Validate required fields
+      const { name, email, subject, message } = req.body
 
+      if (!name || !email || !subject || !message) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: 'All fields (name, email, subject, message) are required',
+        })
+      }
+
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailRegex.test(email)) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: 'Invalid email format',
+        })
+      }
+
+      // Sanitize input - basic length checks
+      if (name.length > 100) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: 'Name must be 100 characters or less',
+        })
+      }
+
+      if (subject.length > 200) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: 'Subject must be 200 characters or less',
+        })
+      }
+
+      if (message.length > 5000) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: 'Message must be 5000 characters or less',
+        })
+      }
+
+      // Send email using email service
+      const result = await sendContactEmail({ name, email, subject, message })
+
+      // Log successful send (without sensitive data)
+      console.log('Contact form email sent successfully:', {
+        messageId: result.MessageId,
+        to: email,
+        timestamp: new Date().toISOString(),
+      })
+
+      res.status(200).json({
+        success: true,
+        messageId: result.MessageId,
+        message: 'Email sent successfully',
+      })
+    } catch (error) {
+      console.error('Error in sendMessage controller:', error)
+
+      // Return appropriate error response
+      if (error.message.includes('Validation failed') || error.message.includes('Invalid')) {
+        return res.status(400).json({
+          error: 'Validation failed',
+          message: error.message,
+        })
+      }
+
+      // Server error
+      res.status(500).json({
+        error: 'Internal server error',
+        message: 'Failed to send email. Please try again later.',
+      })
+    }
   }
 }
