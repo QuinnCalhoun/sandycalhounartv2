@@ -1,5 +1,9 @@
 import axios from 'axios'
-const baseUrl = 'https://sandycalhounart.herokuapp.com'
+
+// Use local API in development, production API in production
+const baseUrl = process.env.NODE_ENV === 'production' 
+  ? 'https://sandycalhounart.herokuapp.com'
+  : 'http://localhost:3001'
 
 const API =  {
     getArt: function () {

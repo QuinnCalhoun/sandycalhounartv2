@@ -37,15 +37,30 @@ app.get('/', function (req, res) {
 });
 app.use(routes);
 
-MongoClient.connect(process.env.MONGODB_URI, (err, db) => {
-  if (err) {
-    console.log('Failed to connect to database. ' + err.stack)
-  }
-  console.log('We have a database connection at ' + db.options.dbName)
-  app.locals.db = db
-  app.listen(PORT, () => {
-    console.log(`API listening on port ${PORT}`)
+// Check if MONGODB_URI is set
+if (!process.env.MONGODB_URI) {
+  console.error('ERROR: MONGODB_URI environment variable is not set!')
+  console.error('Please create a .env file with your MongoDB connection string.')
+  console.error('Example: MONGODB_URI=mongodb://localhost:27017/your-database')
+  process.exit(1)
+}
+
+// Connect to MongoDB
+MongoClient.connect(process.env.MONGODB_URI)
+  .then((client) => {
+    const db = client.db('sandycalhounv2')
+    console.log('Successfully connected to database: ' + db.databaseName)
+    app.locals.db = client // Store the client, not just the db
+    app.locals.dbName = 'sandycalhounv2'
+    
+    app.listen(PORT, () => {
+      console.log(`API listening on port ${PORT}`)
+    })
   })
-})
+  .catch((err) => {
+    console.error('Failed to connect to database:', err.message)
+    console.error('Server will not start without database connection.')
+    process.exit(1)
+  })
 
 
