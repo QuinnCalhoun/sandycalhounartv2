@@ -1,7 +1,6 @@
-import path, { dirname } from 'path'
+import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
-import bodyParser from 'body-parser'
 import { MongoClient } from 'mongodb'
 
 import dotenv from 'dotenv'
@@ -12,9 +11,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -30,10 +28,10 @@ if (process.env.NODE_ENV === "production") {
 import { router as routes } from "./routes/index.mjs"
 // Add routes, both API and view
 
-app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static(join(__dirname, '/client/build')));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+  res.sendFile(join(__dirname, '/client/build', 'index.html'));
 });
 app.use(routes);
 
@@ -45,9 +43,11 @@ if (!process.env.MONGODB_URI) {
   process.exit(1)
 }
 
-// Connect to MongoDB
-MongoClient.connect(process.env.MONGODB_URI)
-  .then((client) => {
+// Connect to MongoDB and start server
+const startServer = async () => {
+  try {
+    const client = new MongoClient(process.env.MONGODB_URI)
+    await client.connect()
     const db = client.db('sandycalhounv2')
     console.log('Successfully connected to database: ' + db.databaseName)
     app.locals.db = client // Store the client, not just the db
@@ -56,11 +56,13 @@ MongoClient.connect(process.env.MONGODB_URI)
     app.listen(PORT, () => {
       console.log(`API listening on port ${PORT}`)
     })
-  })
-  .catch((err) => {
+  } catch (err) {
     console.error('Failed to connect to database:', err.message)
     console.error('Server will not start without database connection.')
     process.exit(1)
-  })
+  }
+}
+
+startServer()
 
 

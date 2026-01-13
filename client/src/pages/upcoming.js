@@ -1,6 +1,6 @@
 import { Grid, Header } from 'semantic-ui-react'
 import UpcomingCard from '../components/upcomingContent'
-import { Blue, TheHealingShow } from '../assets/pics'
+import { TheHealingShow } from '../assets/pics'
 
 const Upcoming = () => {
 

@@ -11,7 +11,7 @@ export const artController = {
   findAll: async (req, res) => {
     let db = req.app.locals.db.db('sandycalhounv2').collection('arts')
 
-    let query = {}
+    let query = { deleted: { $ne: true } }
     let options = {
       sort: { year: -1, title: +1 }
     }
@@ -23,7 +23,7 @@ export const artController = {
   findByTitle: async (req, res) => {
     let db = req.app.locals.db.db('sandycalhounv2').collection('arts')
 
-    let query = { title: req.params.title }
+    let query = { title: req.params.title, deleted: { $ne: true } }
     let options = {
       sort: { year: -1, title: +1 }
     }
@@ -35,7 +35,7 @@ export const artController = {
   findByAuthor: async (req, res) => {
     let db = req.app.locals.db.db('sandycalhounv2').collection('arts')
 
-    let query = { author: req.params.author }
+    let query = { author: req.params.author, deleted: { $ne: true } }
     let options = {
       sort: { year: -1, title: +1 }
     }
@@ -47,7 +47,7 @@ export const artController = {
   findByYear: async (req, res) => {
     let db = req.app.locals.db.db('sandycalhounv2').collection('arts')
 
-    let query = { year: req.params.year }
+    let query = { year: req.params.year, deleted: { $ne: true } }
     let options = {
       sort: { year: -1, title: +1 }
     }
@@ -60,15 +60,16 @@ export const artController = {
   findByMedia: async (req, res) => {
     let db = req.app.locals.db.db('sandycalhounv2').collection('arts')
 
-    let query = { media: { $all: innerQ } }
-    let innerQ = [
-      ...req.params.media,
-    ]
+    let innerQ = [req.params.media]
     if (req.params.mediatwo) {
-      query.push(req.params.mediatwo)
+      innerQ.push(req.params.mediatwo)
     }
     if (req.params.mediathree) {
-      query.push(req.params.mediathree)
+      innerQ.push(req.params.mediathree)
+    }
+    let query = { 
+      media: { $all: innerQ },
+      deleted: { $ne: true }
     }
     let options = {
       sort: { year: -1, title: +1 }

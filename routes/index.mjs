@@ -28,8 +28,13 @@ router.route('/api/art/author/:author')
 router.route('/api/art/year/:year')
     .get(artController.findByYear)
 
-// ? indicates optional parameters. The parameter with no question mark after it is the default if the user only inputs one value.
-router.route('/api/art/media/:media/:mediatwo?/:mediathree?')
+// Handle media routes with 1, 2, or 3 parameters
+// Express 5.x doesn't support optional parameters with ?, so we need separate routes
+router.route('/api/art/media/:media')
+    .get(artController.findByMedia)
+router.route('/api/art/media/:media/:mediatwo')
+    .get(artController.findByMedia)
+router.route('/api/art/media/:media/:mediatwo/:mediathree')
     .get(artController.findByMedia)
 
 router.route('/api/shows')

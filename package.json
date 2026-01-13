@@ -2,7 +2,7 @@
   "name": "sandysart",
   "version": "1.0.0",
   "engines": {
-    "node": "19.0.0"
+    "node": "24.x"
   },
   "description": "",
   "main": "server.mjs",
@@ -13,32 +13,38 @@
     "install": "cd client && npm install",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "build": "cd client && npm run build "
+    "build": "cd client && npm run build ",
+    "upload:images": "node scripts/uploadImagesToS3.mjs",
+    "upload:images:dry-run": "DRY_RUN=true node scripts/uploadImagesToS3.mjs",
+    "update:urls": "node scripts/updateDatabaseUrls.mjs",
+    "update:urls:dry-run": "DRY_RUN=true node scripts/updateDatabaseUrls.mjs",
+    "migrate:images": "npm run upload:images && npm run update:urls",
+    "migrate:images:dry-run": "npm run upload:images:dry-run && npm run update:urls:dry-run",
+    "mark:deleted": "node scripts/manageArtworkVisibility.mjs delete",
+    "restore:artwork": "node scripts/manageArtworkVisibility.mjs restore",
+    "list:deleted": "node scripts/manageArtworkVisibility.mjs list",
+    "search:artwork": "node scripts/manageArtworkVisibility.mjs search",
+    "analyze:dimensions": "node scripts/analyzeDimensionOrder.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-ses": "^3.211.0",
-    "aws-sdk": "^2.1255.0",
-    "axios": "^1.1.3",
-    "babel-loader": "^9.0.1",
-    "body-parser": "^1.19.0",
-    "concurrently": "^7.5.0",
+    "@aws-sdk/client-s3": "^3.967.0",
+    "@aws-sdk/client-ses": "^3.967.0",
+    "axios": "^1.13.2",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.2.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.17.1",
-    "express-rate-limit": "^7.1.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
     "if-env": "^1.0.4",
-    "mongodb": "^4.11.0",
-    "nodemailer": "^7.0.12",
-    "nodemailer-ses-transport": "^1.5.1",
-    "nodemailer-smtp-transport": "^2.4.2",
-    "nodemon": "^3.1.11",
-    "path": "^0.12.7"
+    "mongodb": "^7.0.0",
+    "nodemon": "^3.1.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4"
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@babel/preset-react": "^7.28.5"
   }
 }

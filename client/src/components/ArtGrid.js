@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import API from '../utils/API'
-import { Grid, Image, Modal, Segment, Button, Pagination, Icon, Container, Divider } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import { Grid, Modal, Segment, Pagination, Icon, Container, Divider, Placeholder } from 'semantic-ui-react'
 
 const ArtGrid = () => {
 
@@ -9,22 +8,31 @@ const ArtGrid = () => {
     const [pages, setPages] = useState()
     const [isDesktop, setDesktop] = useState(window.innerWidth > 767)
     const [currentPage, setCurrentPage] = useState()
+    const [isLoading, setIsLoading] = useState(true)
+    const [imageLoadStates, setImageLoadStates] = useState({})
+
+    const updateMedia = useCallback(() => {
+        setDesktop(window.innerWidth > 767);
+    }, []);
 
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
         return () => window.removeEventListener("resize", updateMedia);
-    });
-
-    const updateMedia = () => {
-        setDesktop(window.innerWidth > 767);
-    };
+    }, [updateMedia]);
 
     useEffect(() => {
         async function artGrabber() {
-            const result = await API.getArt()
-            setCurrentPage(1)
-            setArt(result.data)
-            mobilePaginator(result.data)
+            try {
+                setIsLoading(true)
+                const result = await API.getArt()
+                setCurrentPage(1)
+                setArt(result.data)
+                mobilePaginator(result.data)
+            } catch (error) {
+                console.error('Error fetching art:', error)
+            } finally {
+                setIsLoading(false)
+            }
         }
         artGrabber()
     }, [])
@@ -37,50 +45,97 @@ const ArtGrid = () => {
         setPages(mobilePages)
     }
 
-
-    const uppercaser = (string) => {
-        let karko = string.substring(0, 1).toUpperCase() + string.substring(1)
-        return karko
+    const handleImageLoad = (imageId) => {
+        setImageLoadStates(prev => ({ ...prev, [imageId]: true }))
     }
 
+    const handleImageError = (imageId) => {
+        setImageLoadStates(prev => ({ ...prev, [imageId]: 'error' }))
+    }
 
+    // Generate image URL - for now just return as-is, can be enhanced when S3 is set up
+    const getImageUrl = (baseUrl) => {
+        return baseUrl || ''
+    }
+
+    // Create placeholder component for loading state
+    const ImagePlaceholder = () => (
+        <Placeholder style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }}>
+            <Placeholder.Image rectangular />
+        </Placeholder>
+    )
 
     function cardBuilder(array) {
         return (
-            array.map((data) => {
+            array.map((data, index) => {
+                const imageId = `${data.title}-${index}`
+                const isImageLoaded = imageLoadStates[imageId]
+                const isImageError = imageLoadStates[imageId] === 'error'
+                const isFirstBatch = index < 6 // Preload first 6 images
+                
                 return (
-                    <Modal key={data.title} dimmer='inverted' closeIcon={<Icon name='close' color='black' />} trigger={<Image style={{ maxHeight: '300px', paddingTop: '15px', paddingBottom: '7.5px' }} id='gridImage' alt={data.title} src={data.imageUrl} />} >
+                    <Modal 
+                        key={data.title} 
+                        dimmer='inverted' 
+                        closeIcon={<Icon name='close' color='black' />} 
+                        trigger={
+                            <div style={{ position: 'relative', paddingTop: '15px', paddingBottom: '7.5px', minHeight: '300px' }}>
+                                {!isImageLoaded && !isImageError && (
+                                    <div style={{ position: 'absolute', inset: '15px 0 7.5px 0' }}>
+                                        <ImagePlaceholder />
+                                    </div>
+                                )}
+                                {!isImageError && (
+                                    <img
+                                        id='gridImage'
+                                        alt={data.title}
+                                        src={getImageUrl(data.imageUrl)}
+                                        loading={isFirstBatch ? 'eager' : 'lazy'}
+                                        fetchPriority={isFirstBatch ? 'high' : 'auto'}
+                                        onLoad={() => handleImageLoad(imageId)}
+                                        onError={() => handleImageError(imageId)}
+                                        style={{
+                                            maxHeight: '300px',
+                                            width: '100%',
+                                            objectFit: 'contain',
+                                            opacity: isImageLoaded ? 1 : 0,
+                                            transition: 'opacity 0.2s ease-in',
+                                            position: 'relative'
+                                        }}
+                                    />
+                                )}
+                                {isImageError && (
+                                    <div style={{
+                                        maxHeight: '300px',
+                                        padding: '20px',
+                                        textAlign: 'center',
+                                        color: '#999',
+                                        border: '1px solid #ddd'
+                                    }}>
+                                        Image failed to load
+                                    </div>
+                                )}
+                            </div>
+                        }
+                    >
                         <Modal.Header>
                             {data.title}
-                            <p style={{ fontSize: '1rem' }}>
-                                {(data.wallPiece === true ? '  (wall piece)' : null)}
-                            </p>
                         </Modal.Header>
 
                         <Modal.Content image>
-                            <Image style={{ margin: 'auto' }} alt={data.title} src={data.imageUrl} />
+                            <img
+                                alt={data.title}
+                                src={getImageUrl(data.imageUrl)}
+                                loading="lazy"
+                                style={{ margin: 'auto', maxWidth: '100%', height: 'auto' }}
+                            />
                         </Modal.Content>
                         <Segment>
-                            <Grid columns='2'>
-                                <Grid.Column>
-                                    <p>
-                                        Media: {data.media.map((media, i) => {
-                                        return uppercaser((i === data.media.length - 1) ? `${media} ` : `${media}, `)
-                                    })}
-                                    </p>
-                                    <p>
-                                        Height: {data.size.height}" x Length: {data.size.length}" x Width: {data.size.width}"
-                                    </p>
-                                </Grid.Column>
-                                <Grid.Column textAlign='right'>
-                                    <p>
-                                        {data.author}, {data.year}
-                                    </p>
-                                    <p>
-                                        {(data.price ? <Button content='Inquire for purchase' as={Link} to='/contact' /> : `Unavailable for purchase`)}
-                                    </p>
-                                </Grid.Column>
-                            </Grid>
+                            <p style={{ textAlign: 'center', fontSize: '1.1rem' }}>
+                                {data.size && data.size.height && data.size.length && data.size.width
+                                    ? `${data.size.height}" H × ${data.size.length}" L × ${data.size.width}" W`
+                                    : 'Size not available'}
+                            </p>
                         </Segment>
                     </Modal>
 
@@ -88,11 +143,30 @@ const ArtGrid = () => {
             }))
     }
 
+    if (isLoading) {
+        return (
+            <Grid stackable columns={4} centered>
+                {[...Array(8)].map((_, i) => (
+                    <Grid.Column key={i}>
+                        <ImagePlaceholder />
+                    </Grid.Column>
+                ))}
+            </Grid>
+        )
+    }
+
+    if (!art || art.length === 0) {
+        return (
+            <Container textAlign='center' style={{ padding: '40px' }}>
+                <p>No artwork found.</p>
+            </Container>
+        )
+    }
+
     return (
         <>
-
             <Grid stackable columns={4} centered>
-                {art && pages ? (isDesktop ? cardBuilder(art) : cardBuilder(pages[currentPage - 1])) : null}
+                {art && pages ? (isDesktop ? cardBuilder(art) : cardBuilder(pages[currentPage - 1] || [])) : null}
             </Grid>
             <Divider />
             {art && !isDesktop ?
@@ -112,8 +186,6 @@ const ArtGrid = () => {
                         }} />
                 </Container> :
                 null}
-
-
         </>
     )
 }

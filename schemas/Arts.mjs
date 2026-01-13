@@ -5,7 +5,7 @@ import { artSeed } from '../seeds/seedDB.mjs'
 const uri = process.env.MONGODB_URI
 
 console.log(uri)
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+const client = new MongoClient(uri)
 
 
 const run = async () => {
@@ -56,6 +56,10 @@ const run = async () => {
             },
             wallPiece: {
               bsonType: 'bool',
+            },
+            deleted: {
+              bsonType: 'bool',
+              description: 'Soft delete flag - if true, artwork is hidden from website'
             }
           }
         }
