@@ -1,0 +1,303 @@
+{
+  "total": 37,
+  "successful": 37,
+  "failed": 0,
+  "details": [
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2db",
+      "title": "It must be Monday",
+      "oldUrl": "https://i.ibb.co/0fp8Ry9/Word-Keeper-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/it-must-be-monday.jpg",
+      "s3Key": "artwork/it-must-be-monday.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2dc",
+      "title": "Mama Sputnik",
+      "oldUrl": "https://i.ibb.co/kcX9Kwm/Mama-Sputnick-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/mama-sputnik.jpg",
+      "s3Key": "artwork/mama-sputnik.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e0",
+      "title": "Uncle Chester likes his cherries",
+      "oldUrl": "https://i.ibb.co/Y23Kzq4/Open-Wide-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/uncle-chester-likes-his-cherries.jpg",
+      "s3Key": "artwork/uncle-chester-likes-his-cherries.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e2",
+      "title": "I have a needy inner child",
+      "oldUrl": "https://i.ibb.co/dP2LTXN/Needy-Inner-Child-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/i-have-a-needy-inner-child.jpg",
+      "s3Key": "artwork/i-have-a-needy-inner-child.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e3",
+      "title": "Searching for her inner princess",
+      "oldUrl": "https://i.ibb.co/3mXHVS8/inner-Princess-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/searching-for-her-inner-princess.jpg",
+      "s3Key": "artwork/searching-for-her-inner-princess.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e5",
+      "title": "The day she learned she couldn't fly",
+      "oldUrl": "https://i.ibb.co/2yn2dtg/Day-She-Could-Not-Fly-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/the-day-she-learned-she-couldn-t-fly.jpg",
+      "s3Key": "artwork/the-day-she-learned-she-couldn-t-fly.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e9",
+      "title": "Waiting for a sign",
+      "oldUrl": "https://i.ibb.co/HBDxxj9/Waiting-For-Sign-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/waiting-for-a-sign.jpg",
+      "s3Key": "artwork/waiting-for-a-sign.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2eb",
+      "title": "She was beginning to wonder...",
+      "oldUrl": "https://i.ibb.co/XCQTdGt/She-Was-BEginning-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/she-was-beginning-to-wonder.jpg",
+      "s3Key": "artwork/she-was-beginning-to-wonder.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ee",
+      "title": "Lullabye",
+      "oldUrl": "https://i.ibb.co/9pq4xZW/Lullaby-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/lullabye.jpg",
+      "s3Key": "artwork/lullabye.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f0",
+      "title": "Subtlety wasn't her strong suit",
+      "oldUrl": "https://i.ibb.co/3y52gr2/Subtly-Game-Weak-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/subtlety-wasn-t-her-strong-suit.jpg",
+      "s3Key": "artwork/subtlety-wasn-t-her-strong-suit.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f3",
+      "title": "Bathtime",
+      "oldUrl": "https://i.ibb.co/k3h82hV/Bathtime1-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/bathtime.jpg",
+      "s3Key": "artwork/bathtime.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f5",
+      "title": "Baby bird",
+      "oldUrl": "https://i.ibb.co/93X17tc/Babybird2-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/baby-bird.jpg",
+      "s3Key": "artwork/baby-bird.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f7",
+      "title": "He just knew he was something else",
+      "oldUrl": "https://i.ibb.co/XDHBD9t/Knewhewas-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/he-just-knew-he-was-something-else.jpg",
+      "s3Key": "artwork/he-just-knew-he-was-something-else.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f8",
+      "title": "Blue",
+      "oldUrl": "https://i.ibb.co/jwFRnKy/Copy-of-Blue-2-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/blue.jpg",
+      "s3Key": "artwork/blue.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2fa",
+      "title": "Leveret",
+      "oldUrl": "https://i.ibb.co/HpV9r4z/Copy-of-Leveret-fvhjvy-c-scale-w-625.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/leveret.jpg",
+      "s3Key": "artwork/leveret.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ff",
+      "title": "It Will Be Fun, They Said",
+      "oldUrl": "https://i.ibb.co/6gMWxpT/It-will-be-fun-they-said.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/it-will-be-fun-they-said.jpg",
+      "s3Key": "artwork/it-will-be-fun-they-said.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2de",
+      "title": "Oh, yeah",
+      "oldUrl": "https://i.ibb.co/j3JdLkx/Too-Big-For-Britches-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/oh-yeah.jpg",
+      "s3Key": "artwork/oh-yeah.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e7",
+      "title": "More dangerous than she appears",
+      "oldUrl": "https://i.ibb.co/5941QmN/More-Dangerous-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/more-dangerous-than-she-appears.jpg",
+      "s3Key": "artwork/more-dangerous-than-she-appears.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e8",
+      "title": "Natural born people-pleaser",
+      "oldUrl": "https://i.ibb.co/9Y0PQNQ/Naturalpeoplepleaser-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/natural-born-people-pleaser.jpg",
+      "s3Key": "artwork/natural-born-people-pleaser.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ea",
+      "title": "Crybaby",
+      "oldUrl": "https://i.ibb.co/jJrcB0K/Crybaby-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/crybaby.jpg",
+      "s3Key": "artwork/crybaby.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f2",
+      "title": "His birthday suit was wearing thin",
+      "oldUrl": "https://i.ibb.co/SX4srG5/One-Trick-Pony1-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/his-birthday-suit-was-wearing-thin.jpg",
+      "s3Key": "artwork/his-birthday-suit-was-wearing-thin.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f9",
+      "title": "Yes sir, Yes sir",
+      "oldUrl": "https://i.ibb.co/SfgKrCY/Copy-of-Yes-sir-yes-sir-1-kclnha-c-scale-w-588.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/yes-sir-yes-sir.jpg",
+      "s3Key": "artwork/yes-sir-yes-sir.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2fe",
+      "title": "Far From Perfect",
+      "oldUrl": "https://i.ibb.co/1f3C1fm/Far-from-perfect.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/far-from-perfect.jpg",
+      "s3Key": "artwork/far-from-perfect.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2df",
+      "title": "His inner child was becoming a burden",
+      "oldUrl": "https://i.ibb.co/HPyCmgR/innerchild-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/his-inner-child-was-becoming-a-burden.jpg",
+      "s3Key": "artwork/his-inner-child-was-becoming-a-burden.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e1",
+      "title": "Be verwy, verwy, quiet...",
+      "oldUrl": "https://i.ibb.co/7gFb3kp/beveryquiet-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/be-verwy-verwy-quiet.jpg",
+      "s3Key": "artwork/be-verwy-verwy-quiet.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e4",
+      "title": "Getaway, with baggage",
+      "oldUrl": "https://i.ibb.co/ZBQXSXW/Getawaywithbaggage-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/getaway-with-baggage.jpg",
+      "s3Key": "artwork/getaway-with-baggage.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2e6",
+      "title": "He didn't like where this was going",
+      "oldUrl": "https://i.ibb.co/Px7QSpN/Didntlikewherethiswasheaded-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/he-didn-t-like-where-this-was-going.jpg",
+      "s3Key": "artwork/he-didn-t-like-where-this-was-going.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ec",
+      "title": "She was beginning to think he had unresolved issues",
+      "oldUrl": "https://i.ibb.co/CwrsDw8/Unresolved-Issues-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/she-was-beginning-to-think-he-had-unresolved-issues.jpg",
+      "s3Key": "artwork/she-was-beginning-to-think-he-had-unresolved-issues.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ed",
+      "title": "They said it would be easy",
+      "oldUrl": "https://i.ibb.co/3f35vrx/holdingon-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/they-said-it-would-be-easy.jpg",
+      "s3Key": "artwork/they-said-it-would-be-easy.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f4",
+      "title": "Look-out",
+      "oldUrl": "https://i.ibb.co/vVGt3yp/Lookout-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/look-out.jpg",
+      "s3Key": "artwork/look-out.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2fb",
+      "title": "Cracked Nut",
+      "oldUrl": "https://i.ibb.co/kh2rVYy/Cracked-nut.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/cracked-nut.jpg",
+      "s3Key": "artwork/cracked-nut.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2dd",
+      "title": "Reality was beginning to sink in",
+      "oldUrl": "https://i.ibb.co/tb6fWDH/The-truth-was-beginning-to-sink-in-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/reality-was-beginning-to-sink-in.jpg",
+      "s3Key": "artwork/reality-was-beginning-to-sink-in.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2ef",
+      "title": "She was a natural",
+      "oldUrl": "https://i.ibb.co/XCGHTRr/She-Was-ANatural-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/she-was-a-natural.jpg",
+      "s3Key": "artwork/she-was-a-natural.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f1",
+      "title": "Anne",
+      "oldUrl": "https://i.ibb.co/h8hrdZG/ps-image-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/anne.jpg",
+      "s3Key": "artwork/anne.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2f6",
+      "title": "Living her life on the edge",
+      "oldUrl": "https://i.ibb.co/hyjJfwY/lifeontheedge-opt.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/living-her-life-on-the-edge.jpg",
+      "s3Key": "artwork/living-her-life-on-the-edge.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2fc",
+      "title": "She's got badges",
+      "oldUrl": "https://i.ibb.co/g3qcGX4/She-s-got-badges.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/she-s-got-badges.jpg",
+      "s3Key": "artwork/she-s-got-badges.jpg"
+    },
+    {
+      "success": true,
+      "artworkId": "6374f5dd1fff8f97fb38c2fd",
+      "title": "Facing the Unpleasant Truth",
+      "oldUrl": "https://i.ibb.co/ZYmF1CH/Facing-the-unpleasant-truth.jpg",
+      "newUrl": "https://sandycalhoun-art-images.s3.us-west-2.amazonaws.com/artwork/facing-the-unpleasant-truth.jpg",
+      "s3Key": "artwork/facing-the-unpleasant-truth.jpg"
+    }
+  ]
+}
