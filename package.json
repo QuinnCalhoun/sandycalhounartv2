@@ -11,6 +11,7 @@
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.mjs",
     "install": "cd client && npm install",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "build": "cd client && npm run build ",
