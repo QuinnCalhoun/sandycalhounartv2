@@ -15,6 +15,9 @@ const API =  {
     getShows: () => {
         return axios.get(baseUrl + "/api/shows")
     },
+    getUpcomingShows: () => {
+        return axios.get(baseUrl + "/api/shows/upcoming")
+    },
     sendMail: (body) => {
       return axios.post(baseUrl + "/api/contact", body)
     }

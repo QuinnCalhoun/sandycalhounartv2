@@ -20,7 +20,6 @@ const run = async () => {
           required: [
             'title',
             'location',
-            'year',
           ],
           properties: {
             title: {
@@ -29,7 +28,35 @@ const run = async () => {
             },
             year: {
               bsonType: 'number',
-              description: 'Must have a created on year'
+              description: 'Year of show (for past shows)'
+            },
+            startDate: {
+              bsonType: 'date',
+              description: 'Start date of upcoming show'
+            },
+            endDate: {
+              bsonType: 'date',
+              description: 'End date of upcoming show'
+            },
+            isUpcoming: {
+              bsonType: 'bool',
+              description: 'Flag to indicate if this is an upcoming show'
+            },
+            imageUrl: {
+              bsonType: 'string',
+              description: 'Image URL for upcoming show poster/flyer'
+            },
+            description: {
+              bsonType: 'string',
+              description: 'Optional description/details for upcoming show'
+            },
+            address: {
+              bsonType: 'string',
+              description: 'Physical address for display (optional)'
+            },
+            mapLink: {
+              bsonType: 'string',
+              description: 'Google Maps or Apple Maps link for directions (optional)'
             },
             juror: {
               bsonType: 'string',

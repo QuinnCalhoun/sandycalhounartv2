@@ -39,5 +39,7 @@ router.route('/api/art/media/:media/:mediatwo/:mediathree')
 
 router.route('/api/shows')
     .get(showController.getShows)
+router.route('/api/shows/upcoming')
+    .get(showController.getUpcomingShows)
 router.route('/api/contact')
     .post(contactRateLimiter, artController.sendMessage)

@@ -24,7 +24,11 @@
     "restore:artwork": "node scripts/manageArtworkVisibility.mjs restore",
     "list:deleted": "node scripts/manageArtworkVisibility.mjs list",
     "search:artwork": "node scripts/manageArtworkVisibility.mjs search",
-    "analyze:dimensions": "node scripts/analyzeDimensionOrder.mjs"
+    "analyze:dimensions": "node scripts/analyzeDimensionOrder.mjs",
+    "add:show": "node scripts/addUpcomingShow.mjs",
+    "add:show:dry-run": "DRY_RUN=true node scripts/addUpcomingShow.mjs",
+    "add:resume": "node scripts/addResumeShow.mjs",
+    "add:resume:dry-run": "DRY_RUN=true node scripts/addResumeShow.mjs"
   },
   "author": "",
   "license": "ISC",
