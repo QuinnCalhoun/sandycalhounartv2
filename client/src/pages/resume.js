@@ -97,7 +97,7 @@ const Resume = () => {
                                 <Grid.Column width='2'  ></Grid.Column>
                                 <Grid.Column width='14' >
                                     <p>{show.location}</p>
-                                    {show.juror ? `Juror: ${show.juror} ${show.awards.length > 0 ? ` || Awards: ${show.awards[0]}` : ''}` : null}
+                                    {show.juror ? `Juror: ${show.juror} ${show.awards?.length > 0 ? ` || Awards: ${show.awards[0]}` : ''}` : null}
                                 </Grid.Column>
 
                             </Grid.Row>
