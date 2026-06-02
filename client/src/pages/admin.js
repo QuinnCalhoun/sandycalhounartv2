@@ -259,14 +259,17 @@ const ArtworkTab = () => {
                     : <Label color='green' size='tiny'>Visible</Label>}
                 </Table.Cell>
                 <Table.Cell>
-                  <Button size='tiny' icon='edit' content='Edit' onClick={() => setEditing(item)} />
-                  <Button
-                    size='tiny'
-                    color={item.deleted ? 'green' : 'red'}
-                    icon={item.deleted ? 'undo' : 'hide'}
-                    content={item.deleted ? 'Restore' : 'Hide'}
-                    onClick={() => setConfirmId(item._id)}
-                  />
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                    <Button size='tiny' basic icon='edit' content='Edit' style={{ margin: 0 }} onClick={() => setEditing(item)} />
+                    <Button
+                      size='tiny'
+                      color={item.deleted ? 'green' : 'red'}
+                      icon={item.deleted ? 'undo' : 'hide'}
+                      content={item.deleted ? 'Restore' : 'Hide'}
+                      style={{ margin: 0 }}
+                      onClick={() => setConfirmId(item._id)}
+                    />
+                  </div>
                   <Confirm
                     open={confirmId === item._id}
                     content={item.deleted
@@ -604,8 +607,10 @@ const ShowsTab = () => {
                     : <Label size='tiny'>Group</Label>}
                 </Table.Cell>
                 <Table.Cell>
-                  <Button size='tiny' icon='edit' content='Edit' onClick={() => setEditing(s)} />
-                  <Button size='tiny' color='red' icon='trash' content='Delete' onClick={() => setConfirmId(s._id)} />
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                    <Button size='tiny' basic icon='edit' content='Edit' style={{ margin: 0 }} onClick={() => setEditing(s)} />
+                    <Button size='tiny' color='red' icon='trash' content='Delete' style={{ margin: 0 }} onClick={() => setConfirmId(s._id)} />
+                  </div>
                   <Confirm
                     open={confirmId === s._id}
                     content={`Permanently delete "${s.title}"?`}
