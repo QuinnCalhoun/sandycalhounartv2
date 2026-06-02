@@ -4,6 +4,7 @@ import Art from './art'
 import Upcoming from './upcoming'
 import Contact from './contact'
 import Resume from './resume'
+import Admin from './admin'
 
 export {
     Landing,
@@ -11,5 +12,6 @@ export {
     Art,
     Upcoming,
     Contact,
-    Resume
+    Resume,
+    Admin
 }

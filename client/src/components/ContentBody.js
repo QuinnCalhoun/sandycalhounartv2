@@ -1,6 +1,6 @@
 import { Container } from 'semantic-ui-react'
 import { Route, Routes } from 'react-router-dom'
-import { Landing, About, Art, Upcoming, Contact, Resume } from '../pages/index'
+import { Landing, About, Art, Upcoming, Contact, Resume, Admin } from '../pages/index'
 
 const ContentBody = () => {
   return (
@@ -12,6 +12,7 @@ const ContentBody = () => {
         <Route exact path='/artworks' element={<Art />} />
         <Route exact path='/upcoming' element={<Upcoming />} />
         <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/admin' element={<Admin />} />
       </Routes>
     </Container>
   )

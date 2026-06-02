@@ -29,13 +29,17 @@
     "add:show": "node scripts/addUpcomingShow.mjs",
     "add:show:dry-run": "DRY_RUN=true node scripts/addUpcomingShow.mjs",
     "add:resume": "node scripts/addResumeShow.mjs",
-    "add:resume:dry-run": "DRY_RUN=true node scripts/addResumeShow.mjs"
+    "add:resume:dry-run": "DRY_RUN=true node scripts/addResumeShow.mjs",
+    "verify:images": "node scripts/verifyS3Images.mjs",
+    "configure:cors": "node scripts/configureS3Cors.mjs",
+    "configure:cors:dry-run": "DRY_RUN=true node scripts/configureS3Cors.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.967.0",
     "@aws-sdk/client-ses": "^3.967.0",
+    "@aws-sdk/s3-request-presigner": "^3.1058.0",
     "axios": "^1.13.2",
     "babel-loader": "^10.0.0",
     "concurrently": "^9.2.1",
@@ -44,6 +48,7 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
     "if-env": "^1.0.4",
+    "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.0.0",
     "nodemon": "^3.1.11"
   },
