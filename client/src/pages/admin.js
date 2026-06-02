@@ -63,6 +63,7 @@ const emptyArt = {
 }
 
 const artToForm = (art) => ({
+  _id: art._id,
   title: art.title || '',
   author: art.author || '',
   year: art.year ?? '',
@@ -305,6 +306,7 @@ const emptyShow = {
 }
 
 const showToForm = (s) => ({
+  _id: s._id,
   title: s.title || '',
   location: s.location || '',
   year: s.year ?? '',
