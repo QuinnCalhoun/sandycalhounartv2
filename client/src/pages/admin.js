@@ -324,16 +324,41 @@ const showToForm = (s) => ({
 
 const ShowForm = ({ initial, isEdit, onSaved }) => {
   const [form, setForm] = useState(initial || emptyShow)
+  const [file, setFile] = useState(null)
+  const [previewUrl, setPreviewUrl] = useState('')
   const [error, setError] = useState('')
   const [status, setStatus] = useState('')
   const [saving, setSaving] = useState(false)
+
+  // Create a single object URL per selected file and revoke it on change/unmount
+  // so we don't leak a new blob URL on every re-render.
+  useEffect(() => {
+    if (!file) {
+      setPreviewUrl('')
+      return
+    }
+    const url = URL.createObjectURL(file)
+    setPreviewUrl(url)
+    return () => URL.revokeObjectURL(url)
+  }, [file])
 
   const setField = (key) => (e, data) => {
     const value = data?.type === 'checkbox' ? data.checked : (data ? data.value : e.target.value)
     setForm((prev) => ({ ...prev, [key]: value }))
   }
 
-  const buildPayload = () => {
+  const onFile = (e) => {
+    const f = e.target.files?.[0]
+    if (f && !ACCEPTED_TYPES.includes(f.type)) {
+      setError(`Unsupported file type: ${f.type}. Use JPG, PNG, GIF, or WEBP.`)
+      setFile(null)
+      return
+    }
+    setError('')
+    setFile(f || null)
+  }
+
+  const buildPayload = (imageUrl) => {
     const payload = {
       title: form.title,
       location: form.location,
@@ -349,7 +374,8 @@ const ShowForm = ({ initial, isEdit, onSaved }) => {
       if (form.description) payload.description = form.description
       if (form.address) payload.address = form.address
       if (form.mapLink) payload.mapLink = form.mapLink
-      if (form.imageUrl) payload.imageUrl = form.imageUrl
+      const finalImageUrl = imageUrl || form.imageUrl
+      if (finalImageUrl) payload.imageUrl = finalImageUrl
     }
     return payload
   }
@@ -360,13 +386,28 @@ const ShowForm = ({ initial, isEdit, onSaved }) => {
     setStatus('')
     setSaving(true)
     try {
+      let imageUrl
+      // Only upload when the image will actually be saved (upcoming shows),
+      // otherwise we'd push an orphaned object to S3.
+      if (file && form.isUpcoming) {
+        setStatus('Requesting upload URL...')
+        const { data } = await adminAPI.getUploadUrl(form.title, file.type, 'shows')
+        setStatus('Uploading image to S3...')
+        await adminAPI.uploadToS3(data.uploadUrl, file)
+        imageUrl = data.imageUrl
+      }
+
+      setStatus('Saving show...')
       if (isEdit) {
-        await adminAPI.updateShow(initial._id, buildPayload())
+        await adminAPI.updateShow(initial._id, buildPayload(imageUrl))
       } else {
-        await adminAPI.createShow(buildPayload())
+        await adminAPI.createShow(buildPayload(imageUrl))
       }
       setStatus('Saved.')
-      if (!isEdit) setForm(emptyShow)
+      if (!isEdit) {
+        setForm(emptyShow)
+        setFile(null)
+      }
       onSaved?.()
     } catch (err) {
       setError(errMessage(err, 'Failed to save show'))
@@ -401,7 +442,18 @@ const ShowForm = ({ initial, isEdit, onSaved }) => {
             <Form.Input label='Address' value={form.address} onChange={setField('address')} />
             <Form.Input label='Map link' value={form.mapLink} onChange={setField('mapLink')} />
           </Form.Group>
-          <Form.Input label='Poster/flyer image URL' value={form.imageUrl} onChange={setField('imageUrl')} />
+          <Form.Field>
+            <label>{form.imageUrl ? 'Replace poster/flyer image (optional)' : 'Upload poster/flyer image'}</label>
+            <input type='file' accept={ACCEPTED_TYPES.join(',')} onChange={onFile} />
+            {file && <Label basic style={{ marginTop: 8 }}>{file.name}</Label>}
+          </Form.Field>
+          {(previewUrl || form.imageUrl) && (
+            <Image
+              src={previewUrl || form.imageUrl}
+              size='medium'
+              style={{ marginTop: 8 }}
+            />
+          )}
         </Segment>
       )}
       <Message error content={error} />

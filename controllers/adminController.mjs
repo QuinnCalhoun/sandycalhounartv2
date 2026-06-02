@@ -245,7 +245,7 @@ export const adminController = {
         })
       }
 
-      const { title, contentType } = req.body || {}
+      const { title, contentType, folder } = req.body || {}
       if (!title) {
         return res.status(400).json({
           error: 'Validation failed',
@@ -262,6 +262,10 @@ export const adminController = {
         })
       }
 
+      // Restrict to a known set of folders so callers can't write anywhere.
+      const ALLOWED_FOLDERS = ['artwork', 'shows']
+      const targetFolder = ALLOWED_FOLDERS.includes(folder) ? folder : 'artwork'
+
       const slug = createSlug(title)
       if (!slug) {
         return res.status(400).json({
@@ -270,7 +274,7 @@ export const adminController = {
         })
       }
 
-      const key = `artwork/${slug}${extension}`
+      const key = `${targetFolder}/${slug}${extension}`
 
       const command = new PutObjectCommand({
         Bucket: BUCKET_NAME,

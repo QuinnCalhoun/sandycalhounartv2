@@ -42,9 +42,9 @@ const adminAPI = {
   deleteArt: (id) => client.delete(`/api/admin/art/${id}`),
   restoreArt: (id) => client.put(`/api/admin/art/${id}/restore`),
 
-  // Image upload (presigned)
-  getUploadUrl: (title, contentType) =>
-    client.post('/api/admin/upload-url', { title, contentType }),
+  // Image upload (presigned). `folder` controls the S3 prefix (artwork|shows).
+  getUploadUrl: (title, contentType, folder) =>
+    client.post('/api/admin/upload-url', { title, contentType, folder }),
   uploadToS3: (uploadUrl, file) =>
     axios.put(uploadUrl, file, { headers: { 'Content-Type': file.type } }),
 
